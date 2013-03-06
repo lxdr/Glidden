@@ -1,9 +1,10 @@
 package com.example.glidden;
 
+import android.R;
 import android.app.Activity;
 import android.content.Intent;
+import android.hardware.Camera;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -50,13 +51,13 @@ public class MainActivity extends Activity {
         	}
         });
        
-        //go to Project class when Project1 is clicked
+        //go to Category class when Project1 is clicked
         button3.setOnClickListener(new OnClickListener()
         {
         	@Override
         	public void onClick(View v)
         	{
-        		Intent intent = new Intent(v.getContext(), Project.class);
+        		Intent intent = new Intent(v.getContext(), Category.class);
         		startActivity(intent);
         	}
         });

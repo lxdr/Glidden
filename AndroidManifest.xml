@@ -22,6 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.glidden.Project"
+            android:label="@string/title_activity_project" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.Category"
+            android:label="@string/title_activity_category" >
+        </activity>
     </application>
 
 </manifest>
