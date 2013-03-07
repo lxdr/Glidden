@@ -3,7 +3,11 @@ package com.example.glidden;
 import android.R;
 import android.app.Activity;
 import android.content.Intent;
+<<<<<<< HEAD
 import android.hardware.Camera;
+=======
+import android.graphics.Camera;
+>>>>>>> 5b3a9ca9d6b29969cf1f1874782d6f8f527e9562
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;

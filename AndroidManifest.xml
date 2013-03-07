@@ -23,12 +23,21 @@
             </intent-filter>
         </activity>
         <activity
+<<<<<<< HEAD
             android:name="com.example.glidden.Project"
             android:label="@string/title_activity_project" >
         </activity>
         <activity
             android:name="com.example.glidden.Category"
             android:label="@string/title_activity_category" >
+=======
+            android:name="com.example.glidden.Camera"
+            android:label="@string/title_activity_camera" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.Share"
+            android:label="@string/title_activity_share" >
+>>>>>>> 5b3a9ca9d6b29969cf1f1874782d6f8f527e9562
         </activity>
     </application>
 
