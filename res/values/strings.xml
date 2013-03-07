@@ -8,11 +8,16 @@
     <string name="camera">Camera</string>
     <string name="shopping_list">Shopping List</string>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <string name="title_activity_project">Project</string>
     <string name="action_settings">Settings</string>
     <string name="category_screen">Category Screen</string>
     <string name="project_screen">Project Screen</string>
     <string name="title_activity_category">Category</string>
+=======
+    <string name="would_you_like_to_share_on_instagram">Would you like to Share on Instagram?</string>
+    <string name="back">Back</string>
+>>>>>>> 5b3a9ca9d6b29969cf1f1874782d6f8f527e9562
 =======
     <string name="would_you_like_to_share_on_instagram">Would you like to Share on Instagram?</string>
     <string name="back">Back</string>
