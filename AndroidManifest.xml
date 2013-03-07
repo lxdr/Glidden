@@ -25,6 +25,7 @@
         <activity
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:name="com.example.glidden.Project"
             android:label="@string/title_activity_project" >
         </activity>
@@ -34,6 +35,8 @@
 =======
 =======
 >>>>>>> 5b3a9ca9d6b29969cf1f1874782d6f8f527e9562
+=======
+>>>>>>> 5b3a9ca9d6b29969cf1f1874782d6f8f527e9562
             android:name="com.example.glidden.Camera"
             android:label="@string/title_activity_camera" >
         </activity>
@@ -41,6 +44,9 @@
             android:name="com.example.glidden.Share"
             android:label="@string/title_activity_share" >
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 5b3a9ca9d6b29969cf1f1874782d6f8f527e9562
+=======
 >>>>>>> 5b3a9ca9d6b29969cf1f1874782d6f8f527e9562
 =======
 >>>>>>> 5b3a9ca9d6b29969cf1f1874782d6f8f527e9562

@@ -5,7 +5,11 @@ import android.app.Activity;
 import android.content.Intent;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import android.hardware.Camera;
+=======
+import android.graphics.Camera;
+>>>>>>> 5b3a9ca9d6b29969cf1f1874782d6f8f527e9562
 =======
 import android.graphics.Camera;
 >>>>>>> 5b3a9ca9d6b29969cf1f1874782d6f8f527e9562
