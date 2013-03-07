@@ -30,6 +30,14 @@
             android:name="com.example.glidden.Share"
             android:label="@string/title_activity_share" >
         </activity>
+        <activity
+            android:name="com.example.glidden.ShoppingActivity"
+            android:label="@string/title_activity_shopping" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.SuppliesActivity"
+            android:label="@string/title_activity_supplies" >
+        </activity>
     </application>
 
 </manifest>

@@ -1,10 +1,10 @@
 package com.example.glidden;
 
-import android.R;
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Camera;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
 		//declare buttons
 		button1 = (Button) findViewById(R.id.button1); 
 		button2 = (Button) findViewById(R.id.button2);
-		button3 = (Button) findViewById(R.id.imageButton1);
+		//button3 = (Button) findViewById(R.id.imageButton1);
 		
 		//go to Camera class when Camera is clicked
         button1.setOnClickListener(new OnClickListener()
@@ -46,13 +46,13 @@ public class MainActivity extends Activity {
         	@Override
         	public void onClick(View v)
         	{
-        		Intent intent = new Intent(v.getContext(), ShoppingList.class);
+        		Intent intent = new Intent(v.getContext(), ShoppingActivity.class);
         		startActivity(intent);
         	}
         });
        
         //go to Project class when Project1 is clicked
-        button3.setOnClickListener(new OnClickListener()
+        /*button3.setOnClickListener(new OnClickListener()
         {
         	@Override
         	public void onClick(View v)
@@ -60,7 +60,7 @@ public class MainActivity extends Activity {
         		Intent intent = new Intent(v.getContext(), Project.class);
         		startActivity(intent);
         	}
-        });
+        });*/
 	}
 
 }
