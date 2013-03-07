@@ -7,5 +7,7 @@
     <string name="glidden">Glidden</string>
     <string name="camera">Camera</string>
     <string name="shopping_list">Shopping List</string>
+    <string name="would_you_like_to_share_on_instagram">Would you like to Share on Instagram?</string>
+    <string name="back">Back</string>
 
 </resources>

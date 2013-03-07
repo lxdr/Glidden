@@ -22,6 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.glidden.Camera"
+            android:label="@string/title_activity_camera" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.Share"
+            android:label="@string/title_activity_share" >
+        </activity>
     </application>
 
 </manifest>
