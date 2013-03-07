@@ -11,7 +11,7 @@ import android.widget.ImageButton;
 /**
  * This is the ShoppingActivity class. It will contain a list of
  * projects to be completed with links to shopping lists for their
- * supplies. 
+ * supplies.
  * 
  * @author alexdrawbond
  *

@@ -8,6 +8,13 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+/**
+ * This will be a shopping list for the supplies to 
+ * complete a project. 
+ * 
+ * @author alexdrawbond
+ *
+ */
 public class SuppliesActivity extends Activity {
 	Button button;
 	
@@ -17,6 +24,8 @@ public class SuppliesActivity extends Activity {
 		setContentView(R.layout.activity_supplies);
 		
 		button = (Button) findViewById(R.id.button1);
+		
+		//back button to ShoppingActivity
 		button.setOnClickListener(new OnClickListener()
 		{
 	      	@Override
@@ -29,13 +38,6 @@ public class SuppliesActivity extends Activity {
 	        }
 		});
 		
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.activity_supplies, menu);
-		return true;
 	}
 
 }
