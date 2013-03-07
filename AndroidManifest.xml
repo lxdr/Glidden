@@ -38,6 +38,14 @@
             android:name="com.example.glidden.SuppliesActivity"
             android:label="@string/title_activity_supplies" >
         </activity>
+         <activity
+            android:name="com.example.glidden.Category"
+            android:label="@string/title_activity_supplies" >
+        </activity>
+         <activity
+            android:name="com.example.glidden.Project"
+            android:label="@string/title_activity_supplies" >
+        </activity>
     </application>
 
 </manifest>

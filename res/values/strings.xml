@@ -13,5 +13,8 @@
     <string name="title_activity_camera">Camera</string>
     <string name="title_activity_shopping">ShoppingActivity</string>
     <string name="title_activity_supplies">SuppliesActivity</string>
+    <string name="category_screen">CategoryScreen</string>
+    <string name="action_settings">ActionSettings</string>
+    <string name="project_screen">ProjectScreen</string>
 
 </resources>
