@@ -25,7 +25,7 @@ public class Share extends Activity {
         	@Override
         	public void onClick(View v) {
         		
-        		Intent intent = new Intent(v.getContext(), Camera.class);
+        		Intent intent = new Intent(v.getContext(), CameraActivity.class);
         		startActivity(intent);
         		
         	}
