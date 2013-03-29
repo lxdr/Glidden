@@ -4,44 +4,32 @@
     android:layout_height="match_parent"
     tools:context=".ShoppingActivity" >
 
-    <Button
-        android:id="@+id/button1"
+    <RadioButton
+        android:id="@+id/radioButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:text="@string/back" />
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="50dp"
+        android:text="Supply Um" />
 
-    <TextView
-        android:id="@+id/textView1"
+    <RadioButton
+        android:id="@+id/radioButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button1"
-        android:layout_alignBottom="@+id/button1"
-        android:layout_marginLeft="15dp"
-        android:layout_toRightOf="@+id/button1"
-        android:text="@string/glidden"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:layout_alignLeft="@+id/radioButton1"
+        android:layout_below="@+id/radioButton1"
+        android:layout_marginTop="16dp"
+        android:text="Supply Dois" />
 
-    <EditText
-        android:id="@+id/editText1"
+    <RadioButton
+        android:id="@+id/radioButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/button1"
-        android:ems="10"
-        android:inputType="textMultiLine"
-        android:text="Project Name followed by short description" >
-
-        <requestFocus />
-    </EditText>
-
-    <ImageButton
-        android:id="@+id/image_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignTop="@+id/editText1"
-        android:src="@drawable/project_one" />
+        android:layout_alignLeft="@+id/radioButton2"
+        android:layout_below="@+id/radioButton2"
+        android:layout_marginTop="28dp"
+        android:text="Supply Tres" />
 
 </RelativeLayout>

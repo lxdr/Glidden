@@ -4,6 +4,8 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -12,11 +14,9 @@ import android.widget.ImageButton;
 
 /**
  * This is the ShoppingActivity class. It will contain a list of
- * projects to be completed with links to shopping lists for their
- * supplies.
+ * supplies that need to be bought for a project. 
  * 
  * @author alexdrawbond
- *
  */
 public class ShoppingActivity extends Activity {
 	Button button1;
@@ -27,39 +27,32 @@ public class ShoppingActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_shopping);
 		
-		//declare buttons
-		button1 = (Button) findViewById(R.id.button1); 
-		button2 = (ImageButton) findViewById(R.id.image_button);
-		
 		ActionBar actionBar = getActionBar();
     	actionBar.setDisplayHomeAsUpEnabled(true);
-    	
-      //go to the supplies list when project is clicked
-        button2.setOnClickListener(new OnClickListener()
-        {
-        	@Override
-        	public void onClick(View v)
-        	{
-        		finish();
-        		
-        		Intent intent = new Intent(v.getContext(), SuppliesActivity.class);
-        		startActivity(intent);
-        	}
-        });
+    	setTitle("ShoppingActivity");
 	}
-
+	
+	//Navigate up using logo
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 	    switch (item.getItemId()) {
 	        case android.R.id.home:
 	            // app icon in Action Bar clicked; go home
-	            Intent intent = new Intent(this, MainActivity.class);
+	            Intent intent = new Intent(this, Project.class);
 	            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 	            startActivity(intent);
 	            return true;
 	        default:
 	            return super.onOptionsItemSelected(item);
 	    }
+	}
+	
+	//Load action buttons
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.action_menu, menu);
+		return true;
 	}
 }
 
