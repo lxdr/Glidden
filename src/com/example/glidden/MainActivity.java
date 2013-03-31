@@ -29,12 +29,12 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 				
 		//declare buttons
-		button3 = (ImageButton) findViewById(R.id.imageButton1);
+		button1 = (Button) findViewById(R.id.button1);
 		
     	setTitle("Glidden on the Go");
 
 		//go to Category class when Project1 is clicked
-		button3.setOnClickListener(new OnClickListener()
+		button1.setOnClickListener(new OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
