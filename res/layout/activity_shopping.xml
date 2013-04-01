@@ -1,35 +1,30 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     tools:context=".ShoppingActivity" >
 
-    <RadioButton
-        android:id="@+id/radioButton1"
+    <TextView
+        android:id="@+id/textView1"
+        style="text-align:justify"
+        android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="19dp"
-        android:layout_marginTop="50dp"
-        android:text="Supply Um" />
+        android:text="Project Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/radioButton1"
-        android:layout_below="@+id/radioButton1"
-        android:layout_marginTop="16dp"
-        android:text="Supply Dois" />
+    <ListView
+        android:id="@+id/ListView01"
+        android:layout_width="fill_parent"
+        android:layout_height="327dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="16dp" >
 
-    <RadioButton
-        android:id="@+id/radioButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/radioButton2"
-        android:layout_below="@+id/radioButton2"
-        android:layout_marginTop="28dp"
-        android:text="Supply Tres" />
+    </ListView>
 
 </RelativeLayout>

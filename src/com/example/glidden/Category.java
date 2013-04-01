@@ -1,6 +1,5 @@
 package com.example.glidden;
 
-import android.R.string;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;

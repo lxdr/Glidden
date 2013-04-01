@@ -7,10 +7,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.View.OnClickListener;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ListView;
 
 /**
  * This is the ShoppingActivity class. It will contain a list of
@@ -21,6 +21,10 @@ import android.widget.ImageButton;
 public class ShoppingActivity extends Activity {
 	Button button1;
 	ImageButton button2;
+	private ListView lView;
+	private String lv_items[] = { "Android", "iPhone", "BlackBerry", "Galaxy SIII",
+			"AndroidPeople", "J2ME", "Listview", "ArrayAdapter", "ListItem",
+			"Us", "UK", "India", "Nigeria", "Columbia" };
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +34,12 @@ public class ShoppingActivity extends Activity {
 		ActionBar actionBar = getActionBar();
     	actionBar.setDisplayHomeAsUpEnabled(true);
     	setTitle("ShoppingActivity");
+    	
+    	lView = (ListView) findViewById(R.id.ListView01);
+    	//Set option as Multiple Choice. So that user can able to select more the one option from list
+    	lView.setAdapter(new ArrayAdapter<String>(this,
+    	android.R.layout.simple_list_item_multiple_choice, lv_items));
+    	lView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
 	}
 	
 	//Navigate up using logo
