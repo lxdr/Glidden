@@ -23,12 +23,7 @@ public class Category extends Activity{
 	private static final String TAG="CategoryActivity";
 	
 	//array for title of each project
-	protected string[] PROJECT_NAMES; {
-		String a = "Project 1";
-		String b = "Project 2";
-		String c = "Project 3";
-		String d = "Project 4";
-	}
+	protected String[] PROJECT_NAMES = new String[] {"Project 1", "Project 2",  "Project 3", "Project 4"};
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +35,7 @@ public class Category extends Activity{
 	    setTitle("CategoryActivity");
 	    
 	    //an adapter that adds the list items in to a listView
-	    ArrayAdapter<string> adapter = new ArrayAdapter <string>(this, android.R.layout.simple_list_item_1, android.R.id.text1, PROJECT_NAMES);
+	    ArrayAdapter<String> adapter = new ArrayAdapter <String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, PROJECT_NAMES);
 	   
 	    //makes the listView from our layout
 	    ListView projectNames = (ListView) findViewById(R.id.projects);
