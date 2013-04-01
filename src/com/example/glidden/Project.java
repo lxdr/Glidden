@@ -19,6 +19,7 @@ import android.widget.Button;
 public class Project extends Activity {
 
 	Button button;
+	Button button2;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,16 @@ public class Project extends Activity {
 			public void onClick(View v){
 				finish();
 				Intent intent = new Intent(v.getContext(), ShoppingActivity.class);
+				startActivity(intent);
+			}
+		});
+		
+		button2 = (Button) findViewById(R.id.button2);
+		button2.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v){
+				finish();
+				Intent intent = new Intent(v.getContext(), PaintingActivity.class);
 				startActivity(intent);
 			}
 		});

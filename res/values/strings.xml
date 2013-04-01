@@ -12,5 +12,7 @@
     <string name="action_settings">ActionSettings</string>
     <string name="project_screen">ProjectScreen</string>
     <string name="share">Share</string>
+    <string name="title_activity_painting">PaintingActivity</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
