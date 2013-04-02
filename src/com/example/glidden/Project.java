@@ -1,5 +1,7 @@
 package com.example.glidden;
 
+import java.net.URI;
+
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
@@ -53,14 +55,14 @@ public class Project extends Activity {
 		});
 		
 		button3 = (ImageButton) findViewById(R.id.youTubeButton);
-		button3.setOnClickListener(new OnClickListener() {
+		/*button3.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v){
 				finish();
-				Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("vnd.youtube:v=QkNrSpqUr-E" ));
+				Intent intent = new Intent(Intent.ACTION_VIEW, URI.parse("vnd.youtube:v=QkNrSpqUr-E" ));
 				startActivity(intent);
 			}
-		});
+		});*/
 	}
 
 	//Navigate up using logo

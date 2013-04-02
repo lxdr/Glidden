@@ -14,8 +14,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_marginBottom="18dp"
-        android:background="@drawable/ic_launcher"
+        android:background="@drawable/afternoon_photo"
         android:gravity="right|bottom"
         android:text="Afternoon Projects" />
 
@@ -27,9 +26,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/button2"
-        android:layout_marginBottom="119dp"
-        android:layout_marginTop="130dp"
-        android:background="@drawable/ic_launcher"
+        android:layout_marginBottom="111dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/full_day_photo"
         android:gravity="right|bottom"
         android:text="Full Day Projects" />
 
@@ -41,10 +40,10 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/button3"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/full_week_photo"
         android:gravity="right|bottom"
-        android:text="Full Week Projects"
-        android:background="@drawable/ic_launcher" />
+        android:text="Full Week Projects" />
 
     <Button
         android:id="@+id/button2"
@@ -54,9 +53,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_marginBottom="244dp"
-        android:layout_marginTop="109dp"
-        android:background="@drawable/ic_launcher"
+        android:layout_marginBottom="230dp"
+        android:layout_marginTop="113dp"
+        android:background="@drawable/weekend_photo"
         android:gravity="right|bottom"
         android:text="Weekend Projects" />
     
