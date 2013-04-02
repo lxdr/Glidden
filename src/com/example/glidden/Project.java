@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 /**
  * This will be a specific project. It will have a picture/video 
@@ -20,6 +21,7 @@ public class Project extends Activity {
 
 	Button button;
 	Button button2;
+	ImageButton button3;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +48,16 @@ public class Project extends Activity {
 			public void onClick(View v){
 				finish();
 				Intent intent = new Intent(v.getContext(), PaintingActivity.class);
+				startActivity(intent);
+			}
+		});
+		
+		button3 = (ImageButton) findViewById(R.id.youTubeButton);
+		button3.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v){
+				finish();
+				Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("vnd.youtube:v=QkNrSpqUr-E" ));
 				startActivity(intent);
 			}
 		});

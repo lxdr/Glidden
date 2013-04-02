@@ -13,8 +13,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/textView1"
         android:layout_marginBottom="95dp"
+        android:layout_marginLeft="61dp"
         android:text="Go Shopping!" />
 
     <Button
@@ -26,5 +28,31 @@
         android:layout_alignTop="@+id/button1"
         android:layout_marginTop="52dp"
         android:text="Start Painting!" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginRight="76dp"
+        android:layout_marginTop="194dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor." />
+
+    <ImageButton
+        android:id="@+id/youTubeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_marginBottom="110dp"
+        android:layout_marginTop="46dp"
+        android:src="@android:drawable/ic_menu_slideshow" />
 
 </RelativeLayout>
