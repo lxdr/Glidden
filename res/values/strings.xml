@@ -13,6 +13,15 @@
     <string name="project_screen">ProjectScreen</string>
     <string name="share">Share</string>
     <string name="title_activity_painting">PaintingActivity</string>
+
+    <string-array name="categories_array">
+        <item>Theme</item>
+        <item>Type</item>
+    </string-array>
+
+    <string name="title_activity_description_fragment">DescriptionFragment</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_shopping_fragment">ShoppingFragment</string>
+    <string name="title_activity_directions_fragment">DirectionsFragment</string>
 
 </resources>

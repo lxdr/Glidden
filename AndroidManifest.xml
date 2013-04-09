@@ -43,6 +43,18 @@
             android:name="com.example.glidden.PaintingActivity"
             android:label="@string/title_activity_painting" >
         </activity>
+        <activity
+            android:name="com.example.glidden.DescriptionFragment"
+            android:label="@string/title_activity_description_fragment" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.ShoppingFragment"
+            android:label="@string/title_activity_shopping_fragment" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.DirectionsFragment"
+            android:label="@string/title_activity_directions_fragment" >
+        </activity>
     </application>
 
 </manifest>
