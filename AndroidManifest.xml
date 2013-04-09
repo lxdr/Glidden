@@ -32,11 +32,11 @@
             android:label="@string/title_activity_supplies" >
         </activity>
         <activity
-            android:name="com.example.glidden.Category"
+            android:name="com.example.glidden.Traditional"
             android:label="@string/title_activity_supplies" >
         </activity>
         <activity
-            android:name="com.example.glidden.Project"
+            android:name="com.example.glidden.WoodenSideProject"
             android:label="@string/title_activity_supplies" >
         </activity>
         <activity

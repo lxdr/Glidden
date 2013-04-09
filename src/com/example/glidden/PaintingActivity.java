@@ -37,7 +37,7 @@ public class PaintingActivity extends Activity {
 		    switch (item.getItemId()) {
 		        case android.R.id.home:
 		            // app icon in Action Bar clicked; go home
-		            Intent intent = new Intent(this, Project.class);
+		            Intent intent = new Intent(this, WoodenSideProject.class);
 		            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		            startActivity(intent);
 		            return true;
