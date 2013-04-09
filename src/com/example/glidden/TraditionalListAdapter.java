@@ -16,7 +16,7 @@ public class TraditionalListAdapter extends ArrayAdapter<String>{
 	public TraditionalListAdapter(Context context,
 			String[] values) {
 		// TODO Auto-generated constructor stub
-		super(context, R.layout.activity_category, values);
+		super(context, R.layout.traditional_listview, values);
 		this.context = context;
 		this.values = values; 
 	}

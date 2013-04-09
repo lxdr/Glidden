@@ -16,45 +16,50 @@
     <Button
         android:id="@+id/button1"
         android:layout_width="100dp"
-        android:layout_height="125dp"
+        android:layout_height="129dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:background="@drawable/afternoon_photo"
+        android:background="@drawable/traditional"
         android:gravity="right|bottom"
-        android:text="traditional" />
+        android:text="traditional"
+        android:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="100dp"
-        android:layout_height="125dp"
+        android:layout_height="131dp"
         android:layout_below="@id/button1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:background="@drawable/full_day_photo"
+        android:background="@drawable/modern"
         android:gravity="right|bottom"
-        android:text="modern" />
+        android:text="modern"
+        android:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="100dp"
-        android:layout_height="125dp"
+        android:layout_height="131dp"
         android:layout_below ="@id/button2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:background="@drawable/weekend_photo"
+        android:background="@drawable/eclectic"
         android:gravity="right|bottom"
-        android:text="eclectic" />
+        android:text="eclectic"
+        android:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="100dp"
-        android:layout_height="125dp"
+        android:layout_height="131dp"
         android:layout_below ="@id/button3"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:background="@drawable/full_week_photo"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/cottage"
         android:gravity="right|bottom"
-        android:text="cottage" />
+        android:text="cottage"
+        android:textColor="@android:color/white" />
     
 </RelativeLayout>

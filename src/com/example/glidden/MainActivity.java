@@ -23,7 +23,8 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
 	Button button1;
 	Button button2;
-	ImageButton button3;
+	Button button3;
+	Button button4;
 	private static final String TAG="MainActivity";
 	private Spinner spinner;
 	//private String[] filter = new String[] {"Theme", "Type"};
@@ -57,10 +58,13 @@ public class MainActivity extends Activity {
         
 		//declare buttons
 		button1 = (Button) findViewById(R.id.button1);
+		button2 = (Button) findViewById(R.id.button2);
+		button3 = (Button) findViewById(R.id.button3);
+		button4 = (Button) findViewById(R.id.button4);
 		
 		getActionBar().setDisplayShowTitleEnabled(false);
 		
-		//go to Category class when Project1 is clicked
+		//go to Tradition class when traditional is clicked
 		button1.setOnClickListener(new OnClickListener()
 		{
 			@Override
@@ -69,10 +73,48 @@ public class MainActivity extends Activity {
 				//Log.e(TAG, "button pressed");
 				
 				Intent intent = new Intent(v.getContext(), Traditional.class);
-				//Intent intent = new Intent(v.getContext(), Category.class);
 				startActivity(intent);
 			}
 		});
+		
+		//go to Modern class when modern is clicked
+		button2.setOnClickListener(new OnClickListener()
+		{
+					@Override
+					public void onClick(View v)
+					{
+						//Log.e(TAG, "button pressed");
+						
+						Intent intent = new Intent(v.getContext(), Modern.class);
+						startActivity(intent);
+					}
+				});
+				
+		//go to Cottage class when cottage is clicked
+		button3.setOnClickListener(new OnClickListener()
+				{
+					@Override
+					public void onClick(View v)
+					{
+						//Log.e(TAG, "button pressed");
+						
+						Intent intent = new Intent(v.getContext(), Cottage.class);
+						startActivity(intent);
+					}
+				});
+				
+				//go to Eclectic class when eclectic is clicked
+				button4.setOnClickListener(new OnClickListener()
+				{
+					@Override
+					public void onClick(View v)
+					{
+						//Log.e(TAG, "button pressed");
+						
+						Intent intent = new Intent(v.getContext(), Eclectic.class);
+						startActivity(intent);
+					}
+				});
 		
 		/** Defining Navigation listener */
         ActionBar.OnNavigationListener navigationListener = new OnNavigationListener()

@@ -55,6 +55,18 @@
             android:name="com.example.glidden.DirectionsFragment"
             android:label="@string/title_activity_directions_fragment" >
         </activity>
+        <activity
+            android:name="com.example.glidden.Modern"
+            android:label="@string/title_activity_modern" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.Cottage"
+            android:label="@string/title_activity_cottage" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.Eclectic"
+            android:label="@string/title_activity_eclectic" >
+        </activity>
     </application>
 
 </manifest>

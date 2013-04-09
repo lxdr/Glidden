@@ -23,5 +23,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_shopping_fragment">ShoppingFragment</string>
     <string name="title_activity_directions_fragment">DirectionsFragment</string>
+    <string name="title_activity_modern">Modern</string>
+    <string name="title_activity_cottage">Cottage</string>
+    <string name="title_activity_eclectic">Eclectic</string>
 
 </resources>
