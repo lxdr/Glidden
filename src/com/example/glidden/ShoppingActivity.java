@@ -22,18 +22,17 @@ public class ShoppingActivity extends Activity {
 	Button button1;
 	ImageButton button2;
 	private ListView lView;
-	private String lv_items[] = { "Android", "iPhone", "BlackBerry", "Galaxy SIII",
-			"AndroidPeople", "J2ME", "Listview", "ArrayAdapter", "ListItem",
-			"Us", "UK", "India", "Nigeria", "Columbia" };
-	
+	private String lv_items[] = {"Picture Frame", "Corkboard (cut to fit your picture frame)", 
+								"1-1.5Ó brush", "Stir stick", "Glidden ____ paint" };
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_shopping);
-		
+
 		ActionBar actionBar = getActionBar();
     	actionBar.setDisplayHomeAsUpEnabled(true);
-    	setTitle("ShoppingActivity");
+    	setTitle("Creative Corkboard");
     	
     	lView = (ListView) findViewById(R.id.ListView01);
     	//Set option as Multiple Choice. So that user can able to select more the one option from list
@@ -41,7 +40,7 @@ public class ShoppingActivity extends Activity {
     	android.R.layout.simple_list_item_multiple_choice, lv_items));
     	lView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
 	}
-	
+
 	//Navigate up using logo
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
@@ -56,7 +55,7 @@ public class ShoppingActivity extends Activity {
 	            return super.onOptionsItemSelected(item);
 	    }
 	}
-	
+
 	//Load action buttons
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -65,4 +64,3 @@ public class ShoppingActivity extends Activity {
 		return true;
 	}
 }
-

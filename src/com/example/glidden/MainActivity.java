@@ -6,6 +6,10 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+<<<<<<< HEAD
+=======
+import android.util.Log;
+>>>>>>> 4db8ae1b8645214a5764cfb5485c99a32b01084d
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
@@ -35,11 +39,19 @@ public class MainActivity extends Activity {
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);	
 		spinner = (Spinner) findViewById(R.id.spinner);
 		
+<<<<<<< HEAD
 		/*ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
 		        R.array.categories_array, android.R.layout.simple_spinner_item);
 		
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spinner.setAdapter(adapter);*/
+=======
+		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+		        R.array.categories_array, android.R.layout.simple_spinner_item);
+		
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spinner.setAdapter(adapter);
+>>>>>>> 4db8ae1b8645214a5764cfb5485c99a32b01084d
 		
 		 /** Create an array adapter to populate dropdownlist */
         //ArrayAdapter<String> adapter = new ArrayAdapter<String>(getBaseContext(), android.R.layout.simple_spinner_dropdown_item, filter);
@@ -59,7 +71,11 @@ public class MainActivity extends Activity {
 			public void onClick(View v)
 			{
 				//Log.e(TAG, "button pressed");
+<<<<<<< HEAD
 				Intent intent = new Intent(v.getContext(), Traditional.class);
+=======
+				Intent intent = new Intent(v.getContext(), Category.class);
+>>>>>>> 4db8ae1b8645214a5764cfb5485c99a32b01084d
 				startActivity(intent);
 			}
 		});
@@ -75,6 +91,10 @@ public class MainActivity extends Activity {
         };
         
         /** Setting dropdown items and item navigation listener for the actionbar */
+<<<<<<< HEAD
        //getActionBar().setListNavigationCallbacks(adapter, navigationListener);
+=======
+        getActionBar().setListNavigationCallbacks(adapter, navigationListener);
+>>>>>>> 4db8ae1b8645214a5764cfb5485c99a32b01084d
 	}
 }
