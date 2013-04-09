@@ -35,8 +35,8 @@ public class Traditional extends Activity{
 	    actionBar.setDisplayHomeAsUpEnabled(true);
 	    setTitle("Traditional");
 	    
-	    Log.e(TAG, "HERE!!!");
-	    //setListAdapter(new TraditionalListAdapter(this, PROJECT_NAMES));
+	    //Log.e(TAG, "HERE!!!");
+	    setListAdapter(new TraditionalListAdapter(this, PROJECT_NAMES));
 	    
 	    //an adapter that adds the list items in to a listView
 	    ArrayAdapter<String> adapter = new ArrayAdapter <String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, PROJECT_NAMES);

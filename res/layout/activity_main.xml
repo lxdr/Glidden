@@ -15,55 +15,46 @@
    
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button3"
+        android:layout_width="100dp"
+        android:layout_height="125dp"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
         android:background="@drawable/afternoon_photo"
         android:gravity="right|bottom"
-        android:text="Afternoon Projects" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/button2"
-        android:layout_marginBottom="111dp"
-        android:layout_marginTop="116dp"
-        android:background="@drawable/full_day_photo"
-        android:gravity="right|bottom"
-        android:text="Full Day Projects" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/button3"
-        android:layout_marginTop="120dp"
-        android:background="@drawable/full_week_photo"
-        android:gravity="right|bottom"
-        android:text="Full Week Projects" />
+        android:text="traditional" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_width="100dp"
+        android:layout_height="125dp"
+        android:layout_below="@id/button1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginBottom="230dp"
-        android:layout_marginTop="113dp"
+        android:background="@drawable/full_day_photo"
+        android:gravity="right|bottom"
+        android:text="modern" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="100dp"
+        android:layout_height="125dp"
+        android:layout_below ="@id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:background="@drawable/weekend_photo"
         android:gravity="right|bottom"
-        android:text="Weekend Projects" />
+        android:text="eclectic" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="100dp"
+        android:layout_height="125dp"
+        android:layout_below ="@id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/full_week_photo"
+        android:gravity="right|bottom"
+        android:text="cottage" />
     
 </RelativeLayout>
