@@ -1,16 +1,16 @@
 package com.example.glidden;
 
+import java.util.ArrayList;
+
+
 import android.app.ActionBar;
 import android.app.Activity;
-import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -29,23 +29,25 @@ public class Traditional extends Activity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_category);
+		setContentView(R.layout.activity_traditional);
 		
 		ActionBar actionBar = getActionBar();
 	    actionBar.setDisplayHomeAsUpEnabled(true);
 	    setTitle("Traditional");
 	    
 	    //Log.e(TAG, "HERE!!!");
-	    setListAdapter(new TraditionalListAdapter(this, PROJECT_NAMES));
 	    
 	    //an adapter that adds the list items in to a listView
-	    ArrayAdapter<String> adapter = new ArrayAdapter <String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, PROJECT_NAMES);
-	
+	    //ArrayAdapter<String> adapter = new ArrayAdapter <String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, PROJECT_NAMES);
 	    //makes the listView from our layout
-	    ListView projectNames = (ListView) findViewById(R.id.projects);
-	    
+	    //ListView projectNames = (ListView) findViewById(R.id.projects);
 	    //adds adapter
-	    projectNames.setAdapter(adapter);
+	    //projectNames.setAdapter(adapter);
+	    
+	    ArrayList<ItemDetails> image_details = GetSearchResults();
+        
+        final ListView projectNames = (ListView) findViewById(R.id.projects);
+        projectNames.setAdapter(new ItemListBaseAdapter(this, image_details));
 	    
 		//button that goes to a particular project
 		//button = (Button) findViewById(R.id.button1);
@@ -74,12 +76,32 @@ public class Traditional extends Activity{
 			}
 		});
 	}
-	
-	private void setListAdapter(TraditionalListAdapter traditionalListAdapter) {
-		// TODO Auto-generated method stub
-		
-	}
 
+	//puts items inside of the list view
+	private ArrayList<ItemDetails> GetSearchResults(){
+    	ArrayList<ItemDetails> results = new ArrayList<ItemDetails>();
+    	
+    	ItemDetails item_details = new ItemDetails();
+    	item_details.setName("WoodenSideProject");
+    	item_details.setProjectDescription("gobbly gook, blahh blah blahh lol rotflol omg nonsenese nonsens oh yea. YOLO!");
+    	item_details.setImageNumber(1);
+    	results.add(item_details);
+    	
+    	item_details = new ItemDetails();
+    	item_details.setName("FireplaceMantel");
+    	item_details.setProjectDescription("gobbly gook, blahh blah blahh lol rotflol omg nonsenese nonsens oh yea. YOLO!");
+    	item_details.setImageNumber(2);
+    	results.add(item_details);
+    	
+    	item_details = new ItemDetails();
+    	item_details.setName("PaintingActivity");
+    	item_details.setProjectDescription("gobbly gook, blahh blah blahh lol rotflol omg nonsenese nonsens oh yea. YOLO!");
+    	item_details.setImageNumber(3);
+    	results.add(item_details);
+    	
+    	
+    	return results;
+    }
 	
 	//Navigate up using logo.
 	@Override
