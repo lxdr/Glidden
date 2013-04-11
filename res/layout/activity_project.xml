@@ -8,27 +8,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".WoodenSideProject" >
 
-    <Button
-        android:id="@+id/listButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignRight="@+id/textView1"
-        android:layout_marginBottom="95dp"
-        android:layout_marginLeft="61dp"
-        android:text="Go Shopping!" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/listButton"
-        android:layout_alignRight="@+id/listButton"
-        android:layout_alignTop="@+id/listButton"
-        android:layout_marginTop="52dp"
-        android:text="Start Painting!" />
-
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"

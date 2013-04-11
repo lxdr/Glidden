@@ -16,7 +16,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 /**
  * This will be a specific project. It will have a picture/video 
@@ -25,7 +24,7 @@ import android.widget.Toast;
  */
 public class Project extends Activity {
 	public static Context appContext;
-	
+	public static String TAG="ProjectActivity";
 	Button button;
 	Button button2;
 	ImageButton button3;
@@ -34,7 +33,7 @@ public class Project extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_project);
-		
+		Log.e(TAG, "Here!!!");
 		ActionBar actionBar = getActionBar();
 	    actionBar.setDisplayHomeAsUpEnabled(true);
 	    actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
@@ -110,7 +109,7 @@ public class Project extends Activity {
 	}
 }
 
-class MyTabsListener implements ActionBar.TabListener {
+/*class MyTabsListener implements ActionBar.TabListener {
 	public Fragment fragment;
 	public static String TAG="MyTabsListener";
 	
@@ -134,6 +133,6 @@ class MyTabsListener implements ActionBar.TabListener {
 		ft.remove(fragment);
 	}
 
-}
+}*/
 	
 
