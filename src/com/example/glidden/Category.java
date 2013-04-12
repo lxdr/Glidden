@@ -59,8 +59,8 @@ public class Category extends Activity{
 			public void onItemClick(AdapterView<?> arg0, View v, int position, long id) {
 				// TODO Auto-generated method stub
 				finish();
-				Intent intent = new Intent(v.getContext(), Project.class);
-				startActivity(intent);
+				//Intent intent = new Intent(v.getContext(), Project.class);
+				//startActivity(intent);
 			}
 		});
 	}

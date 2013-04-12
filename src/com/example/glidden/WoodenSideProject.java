@@ -2,30 +2,29 @@ package com.example.glidden;
 
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
-import android.app.Activity;
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.ListFragment;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.Button;
+import android.view.View;
 import android.widget.ImageButton;
 
 /**
  * This will be a specific project. It will have a picture/video 
- * and a description. hi
+ * and a description.
  * @author alexdrawbond
  */
-public class WoodenSideProject extends Activity {
+public class WoodenSideProject extends FragmentActivity {
 	public static Context appContext;
 	public static String TAG="WoodenSideTable";
-	Button button;
-	Button button2;
-	ImageButton button3;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +35,9 @@ public class WoodenSideProject extends Activity {
 	    actionBar.setDisplayHomeAsUpEnabled(true);
 	    actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 	    setTitle("WoodenSideProject");
-	    
+		
+	    Log.e(TAG, "Here!!!");
+    	
 	    ActionBar.Tab tab1 = actionBar.newTab().setText("Description");
 	    ActionBar.Tab tab2 = actionBar.newTab().setText("Shopping List");
 	    ActionBar.Tab tab3 = actionBar.newTab().setText("Directions");
@@ -52,20 +53,8 @@ public class WoodenSideProject extends Activity {
 	    actionBar.addTab(tab1);
 	    actionBar.addTab(tab2);
 	    actionBar.addTab(tab3);
-	    Log.e(TAG, "Here!!!");
-		
-		button3 = (ImageButton) findViewById(R.id.youTubeButton);
-		/*button3.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v){
-				finish();
-				Intent intent = new Intent(Intent.ACTION_VIEW, URI.parse("vnd.youtube:v=QkNrSpqUr-E" ));
-				startActivity(intent);
-			}
-		});*/
-		
 	}
-
+	
 	//Navigate up using logo
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
@@ -91,28 +80,34 @@ public class WoodenSideProject extends Activity {
 
 class MyTabsListener implements ActionBar.TabListener {
 	public Fragment fragment;
+	//public ListFragment listFrag;
 	public static String TAG="MyTabsListener";
 	
 	public MyTabsListener(Fragment fragment) {
 		this.fragment = fragment;
 	}
 
+	//public MyTabsListener(ListFragment listFrag) {
+		//this.listFrag = listFrag;
+	//}
+	
 	@Override
 	public void onTabReselected(Tab tab, FragmentTransaction ft) {
-		Log.e(TAG, "HERE!!!");
-		//Toast.makeText(Project.appContext, "Reselected!", Toast.LENGTH_LONG).show();
+		Log.e(TAG, "RESELECTED");
 	}
 
 	@Override
 	public void onTabSelected(Tab tab, FragmentTransaction ft) {
-		ft.replace(R.id.tab1, fragment);
+		
+		ft.replace(R.id.fragment_placeholder, fragment);
+		Log.e(TAG, "SELECTED");
 	}
 
 	@Override
 	public void onTabUnselected(Tab tab, FragmentTransaction ft) {
+		Log.e(TAG, "UNSELECTED");
 		ft.remove(fragment);
 	}
-
 }
 	
 
