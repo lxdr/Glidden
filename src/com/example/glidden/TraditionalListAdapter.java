@@ -1,4 +1,4 @@
-package com.example.glidden;
+/*package com.example.glidden;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -49,3 +49,4 @@ public class TraditionalListAdapter extends ArrayAdapter<String>{
 	
 }
 
+*/
