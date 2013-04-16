@@ -98,7 +98,7 @@ public class MainActivity extends Activity {
 					{
 						//Log.e(TAG, "button pressed");
 						
-						Intent intent = new Intent(v.getContext(), Cottage.class);
+						Intent intent = new Intent(v.getContext(), Eclectic.class);
 						startActivity(intent);
 					}
 				});
@@ -111,7 +111,7 @@ public class MainActivity extends Activity {
 					{
 						//Log.e(TAG, "button pressed");
 						
-						Intent intent = new Intent(v.getContext(), Eclectic.class);
+						Intent intent = new Intent(v.getContext(), Cottage.class);
 						startActivity(intent);
 					}
 				});
