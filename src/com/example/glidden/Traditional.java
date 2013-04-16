@@ -24,7 +24,7 @@ public class Traditional extends Activity{
 	private static final String TAG="CategoryActivity";
 	
 	//array for title of each project
-	protected String[] PROJECT_NAMES = new String[] {"WoodenSideProject", "FireplaceMantel","PaintingActivity"};
+	protected String[] PROJECT_NAMES = new String[] {"WoodenSideProject", "FireplaceMantel"};
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -92,13 +92,6 @@ public class Traditional extends Activity{
     	item_details.setProjectDescription("gobbly gook, blahh blah blahh lol rotflol omg nonsenese nonsens oh yea. YOLO!");
     	item_details.setImageNumber(2);
     	results.add(item_details);
-    	
-    	item_details = new ItemDetails();
-    	item_details.setName("PaintingActivity");
-    	item_details.setProjectDescription("gobbly gook, blahh blah blahh lol rotflol omg nonsenese nonsens oh yea. YOLO!");
-    	item_details.setImageNumber(3);
-    	results.add(item_details);
-    	
     	
     	return results;
     }

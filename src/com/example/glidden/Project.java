@@ -75,7 +75,7 @@ public class Project extends Activity {
 			}
 		});
 		
-		button3 = (ImageButton) findViewById(R.id.youTubeButton);
+		//button3 = (ImageButton) findViewById(R.id.youTubeButton);
 		/*button3.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v){
