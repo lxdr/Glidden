@@ -72,6 +72,7 @@ public class Project extends Activity {
 			}
 		});
 		
+
 	}
 
 	//Navigate up using logo
