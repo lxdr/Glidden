@@ -1,12 +1,11 @@
 package com.example.glidden;
 
 import android.app.ActionBar;
-import android.app.ActionBar.Tab;
 import android.app.Activity;
 import android.app.Fragment;
-import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -15,7 +14,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 /**
  * This will be a specific project. It will have a picture/video 
@@ -27,7 +25,6 @@ public class Project extends Activity {
 	public static String TAG="ProjectActivity";
 	Button button;
 	Button button2;
-	ImageButton button3;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -75,15 +72,6 @@ public class Project extends Activity {
 			}
 		});
 		
-		button3 = (ImageButton) findViewById(R.id.youTubeButton);
-		/*button3.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v){
-				finish();
-				Intent intent = new Intent(Intent.ACTION_VIEW, URI.parse("vnd.youtube:v=QkNrSpqUr-E" ));
-				startActivity(intent);
-			}
-		});*/
 	}
 
 	//Navigate up using logo
