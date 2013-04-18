@@ -47,7 +47,7 @@ public class ItemListBaseAdapter extends BaseAdapter {
 		if (convertView == null) {
 			convertView = l_Inflater.inflate(R.layout.traditional_listview, null);
 			holder = new ViewHolder();
-			holder.txt_itemName = (TextView) convertView.findViewById(R.id.name);
+			holder.txt_itemName = (TextView) convertView.findViewById(R.id.nameTitle);
 			holder.txt_itemDescription = (TextView) convertView.findViewById(R.id.projectDescription);
 			holder.itemImage = (ImageView) convertView.findViewById(R.id.photo);
 
