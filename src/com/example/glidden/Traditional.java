@@ -86,15 +86,15 @@ public class Traditional extends Activity{
     	ItemDetails item_details = new ItemDetails();
     	item_details.setName("WoodenSideProject");
     	item_details.setNameTitle("Wooden Side Project");
-    	item_details.setProjectDescription("gobbly gook, blahh blah blahh lol rotflol omg nonsenese nonsens oh yea. YOLO!");
-    	item_details.setImageNumber(1);
+    	item_details.setProjectDescription("Spruce up an old side table with this quick and easy how-to. Take a weekend to bring a new centerpiece to your room.");
+    	item_details.setImageNumber(2);
     	results.add(item_details);
     	
     	item_details = new ItemDetails();
     	item_details.setName("FireplaceMantel");
     	item_details.setNameTitle("Fireplace Mantel");
     	item_details.setProjectDescription("gobbly gook, blahh blah blahh lol rotflol omg nonsenese nonsens oh yea. YOLO!");
-    	item_details.setImageNumber(2);
+    	item_details.setImageNumber(3);
     	results.add(item_details);
     	
     	return results;

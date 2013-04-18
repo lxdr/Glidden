@@ -16,11 +16,12 @@ public class ItemListBaseAdapter extends BaseAdapter {
 	
 	private Integer[] imgid = {
 			R.drawable.ic_launcher,
-			R.drawable.ic_launcher,
-			R.drawable.ic_launcher,
-			R.drawable.ic_launcher,
-			R.drawable.ic_launcher,
-			R.drawable.ic_launcher,
+			R.drawable.sidetable,
+			R.drawable.fireplace,
+			R.drawable.chevronwall,
+			R.drawable.diningchairs,
+			R.drawable.bluefrontdoor,
+			R.drawable.boldaccentwall,
 			};
 	
 	private LayoutInflater l_Inflater;
