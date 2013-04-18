@@ -11,6 +11,12 @@ public class ItemDetails {
 	public String getDescription() {
 		return itemDescription;
 	}
+	public String getNameTitle() {
+		return name;
+	}
+	public void setNameTitle(String name) {
+		this.name = name;
+	}
 	public void setProjectDescription(String itemDescription) {
 		this.itemDescription = itemDescription;
 	}
