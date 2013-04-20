@@ -16,7 +16,7 @@ import android.widget.AdapterView.OnItemClickListener;
 public class Eclectic extends Activity {
 
 	//array for title of each project
-	protected String[] PROJECT_NAMES = new String[] {"Front Door", "Bold Accent Wall"};
+	protected String[] PROJECT_NAMES = new String[] {"FrontDoor", "BoldAccentWall"};
 		
 	
 	@Override

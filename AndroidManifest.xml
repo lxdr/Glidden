@@ -67,6 +67,10 @@
             android:name="com.example.glidden.Eclectic"
             android:label="@string/title_activity_eclectic" >
         </activity>
+        <activity
+            android:name="com.example.glidden.FireplaceMantel"
+            android:label="@string/title_activity_fireplace_mantel" >
+        </activity>
     </application>
 
 </manifest>
