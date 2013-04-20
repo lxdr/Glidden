@@ -2,16 +2,16 @@ package com.example.glidden;
 
 import java.util.ArrayList;
 
-import android.os.Bundle;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
-import android.view.Menu;
+import android.content.pm.ActivityInfo;
+import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ListView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ListView;
 
 public class Modern extends Activity {
 	
@@ -23,6 +23,8 @@ public class Modern extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_modern);
+		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+	
 		
 		ActionBar actionBar = getActionBar();
 	    actionBar.setDisplayHomeAsUpEnabled(true);
@@ -58,15 +60,15 @@ public class Modern extends Activity {
 	    	ItemDetails item_details = new ItemDetails();
 	    	item_details.setName("ChevronWall");
 	    	item_details.setNameTitle("Chevron Wall");
-	    	item_details.setProjectDescription("gobbly gook, blahh blah blahh lol rotflol omg nonsenese nonsens oh yea. YOLO!");
-	    	item_details.setImageNumber(1);
+	    	item_details.setProjectDescription("A new trend in design found on furniture, clothes and purses can now be found on your walls. Take a weekend to give your room this modern twist.");
+	    	item_details.setImageNumber(4);
 	    	results.add(item_details);
 	    	
 	    	item_details = new ItemDetails();
 	    	item_details.setName("DinningChairs");
 	    	item_details.setNameTitle("Dinning Chairs");
 	    	item_details.setProjectDescription("gobbly gook, blahh blah blahh lol rotflol omg nonsenese nonsens oh yea. YOLO!");
-	    	item_details.setImageNumber(2);
+	    	item_details.setImageNumber(5);
 	    	results.add(item_details);
 	    	
 	    	return results;

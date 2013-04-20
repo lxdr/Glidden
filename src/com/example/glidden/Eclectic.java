@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import android.os.Bundle;
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.pm.ActivityInfo;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -23,6 +24,7 @@ public class Eclectic extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_eclectic);
+		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 		
 		ActionBar actionBar = getActionBar();
 	    actionBar.setDisplayHomeAsUpEnabled(true);
@@ -59,15 +61,15 @@ public class Eclectic extends Activity {
     	ItemDetails item_details = new ItemDetails();
     	item_details.setName("FrontDoor");
     	item_details.setNameTitle("Front Door");
-    	item_details.setProjectDescription("gobbly gook, blahh blah blahh lol rotflol omg nonsenese nonsens oh yea. YOLO!");
-    	item_details.setImageNumber(1);
+    	item_details.setProjectDescription("There's nothing like a good first impression. Paint your door a bright color to bring a pop to any home.");
+    	item_details.setImageNumber(6);
     	results.add(item_details);
     	
     	item_details = new ItemDetails();
     	item_details.setName("BoldAccentWall");
     	item_details.setNameTitle("Bold Accent Wall");
     	item_details.setProjectDescription("gobbly gook, blahh blah blahh lol rotflol omg nonsenese nonsens oh yea. YOLO!");
-    	item_details.setImageNumber(2);
+    	item_details.setImageNumber(7);
     	results.add(item_details);
     	
     	return results;
