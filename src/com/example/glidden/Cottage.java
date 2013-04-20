@@ -64,14 +64,14 @@ public class Cottage extends Activity {
     	item_details.setName("CorkboardFrame");
     	item_details.setNameTitle("Corkboard Frame");
     	item_details.setProjectDescription("Bland boards make for boring walls. Bump up your reminder board’s look with a picture frame in your favorite color.");
-    	item_details.setImageNumber(1);
+    	item_details.setImageNumber(8);
     	results.add(item_details);
     	
     	item_details = new ItemDetails();
     	item_details.setName("BeadedBoardWallPaneling");
     	item_details.setNameTitle("Beaded Board Wall Paneling");
     	item_details.setProjectDescription("gobbly gook, blahh blah blahh lol rotflol omg nonsenese nonsens oh yea. YOLO!");
-    	item_details.setImageNumber(2);
+    	item_details.setImageNumber(9);
     	results.add(item_details);
     	
     	return results;

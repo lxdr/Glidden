@@ -22,6 +22,8 @@ public class ItemListBaseAdapter extends BaseAdapter {
 			R.drawable.diningchairs,
 			R.drawable.bluefrontdoor,
 			R.drawable.boldaccentwall,
+			R.drawable.project_one,
+			R.drawable.beaded_board,
 			};
 	
 	private LayoutInflater l_Inflater;
