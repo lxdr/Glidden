@@ -27,7 +27,6 @@ public class MainActivity extends Activity {
 	Button button4;
 	private static final String TAG="MainActivity";
 	private Spinner spinner;
-	//private String[] filter = new String[] {"Theme", "Type"};
 		
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -37,21 +36,11 @@ public class MainActivity extends Activity {
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);	
 		spinner = (Spinner) findViewById(R.id.spinner);
 		
-		/*ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-		        R.array.categories_array, android.R.layout.simple_spinner_item);
-		
-		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		spinner.setAdapter(adapter);*/
-
 		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
 		        R.array.categories_array, android.R.layout.simple_spinner_item);
 		
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spinner.setAdapter(adapter);
-
-		
-		 /** Create an array adapter to populate dropdownlist */
-        //ArrayAdapter<String> adapter = new ArrayAdapter<String>(getBaseContext(), android.R.layout.simple_spinner_dropdown_item, filter);
 		
         /** Enabling dropdown list navigation for the action bar */
         getActionBar().setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);

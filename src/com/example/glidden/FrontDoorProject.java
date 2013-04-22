@@ -6,35 +6,30 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-//import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-/**
- * This will be a specific project. It will have a picture/video 
- * and a description.
- * @author alexdrawbond
- */
-public class WoodenSideProject extends FragmentActivity {
+public class FrontDoorProject extends FragmentActivity {
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.sidetable_project);
+		setContentView(R.layout.activity_front_door_project);
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 		
 		ActionBar actionBar = getActionBar();
 	    actionBar.setDisplayHomeAsUpEnabled(true);
 	    actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-	    setTitle("WoodenSideProject");
+	    setTitle("Re-Do Your Door");
     	
 	    ActionBar.Tab tab1 = actionBar.newTab().setText("Description");
 	    ActionBar.Tab tab2 = actionBar.newTab().setText("Shopping List");
 	    ActionBar.Tab tab3 = actionBar.newTab().setText("Instructions");
 	  
-	    Fragment DescriptionFragment = new SideTableDescFrag();
-	    Fragment ShoppingListFragment = new SideTableShopFrag();
-	    Fragment DirectionsListFragment = new SideTableDircFrag();
+	    Fragment DescriptionFragment = new FrontDoorDescFrag();
+	    Fragment ShoppingListFragment = new FrontDoorShopFrag();
+	    Fragment DirectionsListFragment = new FrontDoorDircFrag();
 	    
 	    tab1.setTabListener(new MyTabsListener(DescriptionFragment));
 	    tab2.setTabListener(new MyTabsListener(ShoppingListFragment));
@@ -50,7 +45,7 @@ public class WoodenSideProject extends FragmentActivity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 	    switch (item.getItemId()) {
 	        case android.R.id.home:
-	            Intent intent = new Intent(this, Traditional.class);
+	            Intent intent = new Intent(this, Modern.class);
 	            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 	            startActivity(intent);
 	            return true;
@@ -66,4 +61,5 @@ public class WoodenSideProject extends FragmentActivity {
 		inflater.inflate(R.menu.action_menu, menu);
 		return true;
 	}
+
 }

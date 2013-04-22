@@ -6,12 +6,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class SideTableDescFrag extends Fragment
+public class ChevronDescFrag extends Fragment 
 {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) 
 	{
-		View view = inflater.inflate(R.layout.sidetable_description_frag, container, false);
+		View view = inflater.inflate(R.layout.chevron_desc_frag, container, false);
 		
 		// Inflate the layout for this fragment
 		return view;

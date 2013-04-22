@@ -28,5 +28,16 @@
     <string name="title_activity_eclectic">Eclectic</string>
     <string name="title_activity_fireplace_mantel">FireplaceMantel</string>
     <string name="title_activity_chevron_wall_project">ChevronWallProject</string>
+    <string name="title_activity_chevron_desc_frag">ChevronDescFrag</string>
+    <string name="title_activity_chevron_dirc_frag">ChevronDircFrag</string>
+    <string name="title_activity_chevron_shop_frag">ChevronShopFrag</string>
+    <string name="title_activity_front_door_project">FrontDoorProject</string>
+    <string name="title_activity_front_door_dirc_frag">FrontDoorDircFrag</string>
+    <string name="title_activity_front_door_desc_frag">FrontDoorDescFrag</string>
+    <string name="title_activity_front_door_shop_frag">FrontDoorShopFrag</string>
+    <string name="title_activity_coark_board_project">CoarkBoardProject</string>
+    <string name="title_activity_coark_board_desc_frag">CoarkBoardDescFrag</string>
+    <string name="title_activity_coark_board_dirc_frag">CoarkBoardDircFrag</string>
+    <string name="title_activity_coark_board_shop_frag">CoarkBoardShopFrag</string>
 
 </resources>

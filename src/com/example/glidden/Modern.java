@@ -16,7 +16,7 @@ import android.widget.ListView;
 public class Modern extends Activity {
 	
 	//array for title of each project
-	protected String[] PROJECT_NAMES = new String[] {"Chevron Wall", "Dinning Chairs"};
+	protected String[] PROJECT_NAMES = new String[] {"ChevronWallProject", "Dinning Chairs"};
 		
 
 	@Override

@@ -20,7 +20,7 @@ import android.widget.AdapterView.OnItemClickListener;
 public class Cottage extends Activity {
 	
 	//array for title of each project
-	protected String[] PROJECT_NAMES = new String[] {"CorkboardFrame", "BeadedBoardWallPaneling"};
+	protected String[] PROJECT_NAMES = new String[] {"CorkBoardProject", "BeadedBoardWallPaneling"};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

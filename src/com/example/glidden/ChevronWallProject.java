@@ -6,16 +6,19 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 
 public class ChevronWallProject extends FragmentActivity {
-
+	static String TAG = "ChevronWallProject";
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_chevron_wall_project);
-setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 		
 		ActionBar actionBar = getActionBar();
 	    actionBar.setDisplayHomeAsUpEnabled(true);
@@ -26,9 +29,9 @@ setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 	    ActionBar.Tab tab2 = actionBar.newTab().setText("Shopping List");
 	    ActionBar.Tab tab3 = actionBar.newTab().setText("Instructions");
 	  
-	    Fragment DescriptionFragment = new SideTableDescFrag();
-	    Fragment ShoppingListFragment = new SideTableShopFrag();
-	    Fragment DirectionsListFragment = new SideTableDircFrag();
+	    Fragment DescriptionFragment = new ChevronDescFrag();
+	    Fragment ShoppingListFragment = new ChevronShopFrag();
+	    Fragment DirectionsListFragment = new ChevronDircFrag();
 	    
 	    tab1.setTabListener(new MyTabsListener(DescriptionFragment));
 	    tab2.setTabListener(new MyTabsListener(ShoppingListFragment));
@@ -37,18 +40,13 @@ setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 	    actionBar.addTab(tab1);
 	    actionBar.addTab(tab2);
 	    actionBar.addTab(tab3);
+	    Log.e(TAG, "HERE!!!");
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.chevron_wall_project, menu);
-		return true;
-	}
-	
 	//Navigate up using logo
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
+		
 	    switch (item.getItemId()) {
 	        case android.R.id.home:
 	            Intent intent = new Intent(this, Modern.class);
@@ -58,5 +56,14 @@ setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 	        default:
 	            return super.onOptionsItemSelected(item);
 	    }
+	}
+	
+	//Load action bar buttons
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.action_menu, menu);
+		return true;
 	}
 }
