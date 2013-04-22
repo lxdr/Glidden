@@ -27,5 +27,6 @@
     <string name="title_activity_cottage">Cottage</string>
     <string name="title_activity_eclectic">Eclectic</string>
     <string name="title_activity_fireplace_mantel">FireplaceMantel</string>
+    <string name="title_activity_chevron_wall_project">ChevronWallProject</string>
 
 </resources>

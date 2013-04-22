@@ -6,27 +6,21 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-//import android.util.Log;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 
-/**
- * This will be a specific project. It will have a picture/video 
- * and a description.
- * @author alexdrawbond
- */
-public class WoodenSideProject extends FragmentActivity {
+public class ChevronWallProject extends FragmentActivity {
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.sidetable_project);
-		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+		setContentView(R.layout.activity_chevron_wall_project);
+setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 		
 		ActionBar actionBar = getActionBar();
 	    actionBar.setDisplayHomeAsUpEnabled(true);
 	    actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-	    setTitle("WoodenSideProject");
+	    setTitle("Chevron Walls");
     	
 	    ActionBar.Tab tab1 = actionBar.newTab().setText("Description");
 	    ActionBar.Tab tab2 = actionBar.newTab().setText("Shopping List");
@@ -44,13 +38,20 @@ public class WoodenSideProject extends FragmentActivity {
 	    actionBar.addTab(tab2);
 	    actionBar.addTab(tab3);
 	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.chevron_wall_project, menu);
+		return true;
+	}
 	
 	//Navigate up using logo
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 	    switch (item.getItemId()) {
 	        case android.R.id.home:
-	            Intent intent = new Intent(this, Traditional.class);
+	            Intent intent = new Intent(this, Modern.class);
 	            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 	            startActivity(intent);
 	            return true;
@@ -58,14 +59,4 @@ public class WoodenSideProject extends FragmentActivity {
 	            return super.onOptionsItemSelected(item);
 	    }
 	}
-	
-	//Load action bar buttons
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		MenuInflater inflater = getMenuInflater();
-		inflater.inflate(R.menu.action_menu, menu);
-		return true;
-	}
 }
-
-
