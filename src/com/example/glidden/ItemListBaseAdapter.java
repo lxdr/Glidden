@@ -22,7 +22,7 @@ public class ItemListBaseAdapter extends BaseAdapter {
 			R.drawable.diningchairs,
 			R.drawable.bluefrontdoor,
 			R.drawable.boldaccentwall,
-			R.drawable.project_one,
+			R.drawable.mirrorframe,
 			R.drawable.beaded_board,
 			};
 	

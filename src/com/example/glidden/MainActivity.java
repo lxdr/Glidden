@@ -6,12 +6,10 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -27,6 +25,9 @@ public class MainActivity extends Activity {
 	Button button4;
 	private static final String TAG="MainActivity";
 	private Spinner spinner;
+	
+	//array for title of each project
+		protected String[] PROJECT_NAMES = new String[] {"Traditional", "Modern", "Eclectic", "Cottage"};
 		
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -45,13 +46,14 @@ public class MainActivity extends Activity {
         /** Enabling dropdown list navigation for the action bar */
         getActionBar().setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
         
-		//declare buttons
+        getActionBar().setDisplayShowTitleEnabled(false);
+		
+        //declare buttons
 		button1 = (Button) findViewById(R.id.button1);
 		button2 = (Button) findViewById(R.id.button2);
 		button3 = (Button) findViewById(R.id.button3);
 		button4 = (Button) findViewById(R.id.button4);
 		
-		getActionBar().setDisplayShowTitleEnabled(false);
 		
 		//go to Tradition class when traditional is clicked
 		button1.setOnClickListener(new OnClickListener()
@@ -104,7 +106,56 @@ public class MainActivity extends Activity {
 						startActivity(intent);
 					}
 				});
-		
+
+        /*ArrayList<ItemDetails> image_details = GetSearchResults();
+        
+        final ListView lv1 = (ListView) findViewById(R.id.listV_main);
+        lv1.setAdapter(new ItemListBaseAdapter(this, image_details));
+        
+      //sets the click listener to the adapter and not a button
+      	lv1.setOnItemClickListener(new OnItemClickListener() {
+
+      			@Override
+      			public void onItemClick(AdapterView<?> arg0, View v, int position, long id) {
+      				// TODO Auto-generated method stub
+      				String openClass = PROJECT_NAMES[position];
+      				try{
+      					Class selected = Class.forName("com.example.glidden." + openClass);
+      					Intent intent = new Intent(v.getContext(), selected);
+      					startActivity(intent);
+      				}catch (ClassNotFoundException e){
+      					e.printStackTrace();
+      				}
+      			}
+      		});
+      	}
+    
+    private ArrayList<ItemDetails> GetSearchResults(){
+    	ArrayList<ItemDetails> results = new ArrayList<ItemDetails>();
+    	
+    	ItemDetails item_details = new ItemDetails();
+    	item_details.setName("Traditional");
+    	item_details.setImageNumber(1);
+    	results.add(item_details);
+    	
+    	item_details = new ItemDetails();
+    	item_details.setName("Modern");
+    	item_details.setImageNumber(2);
+    	results.add(item_details);
+    	
+    	item_details = new ItemDetails();
+    	item_details.setName("Eclectic");
+    	item_details.setImageNumber(3);
+    	results.add(item_details);
+    	
+    	item_details = new ItemDetails();
+    	item_details.setName("Cottage");
+    	item_details.setImageNumber(4);
+    	results.add(item_details);
+    	
+    	return results;
+    }*/
+    	
 		/** Defining Navigation listener */
         ActionBar.OnNavigationListener navigationListener = new OnNavigationListener()
         {
@@ -116,6 +167,6 @@ public class MainActivity extends Activity {
         };
         
         /** Setting dropdown items and item navigation listener for the actionbar */
-        getActionBar().setListNavigationCallbacks(adapter, navigationListener);
+       getActionBar().setListNavigationCallbacks(adapter, navigationListener);
 	}
 }
