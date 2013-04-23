@@ -17,7 +17,6 @@ import android.widget.ListView;
  */
 public class SideTableDircFrag extends Fragment
 {
-	public static String TAG="DirectionsFragment";
 	private String[] directions_items = {"1. Follow the directions on the paint stripper, or use a sander " +
 			"to strip old paint and finishes off of the table. If using the sander, wipe the table down with a damp rag after.",
 			"2. Cover any hinges and handles you don’t wish to paint with painter’s tape.", "3. Paint an even layer over the table " +
@@ -39,7 +38,6 @@ public class SideTableDircFrag extends Fragment
 	{
 		lView1 = (ListView) view.findViewById(R.id.directions_list_view);
 		
-    
     	lView1.setAdapter(new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, directions_items));
 	}
 }

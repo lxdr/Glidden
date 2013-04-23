@@ -24,36 +24,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.glidden.ShoppingActivity"
-            android:label="@string/title_activity_shopping" >
-        </activity>
-        <activity
-            android:name="com.example.glidden.SuppliesActivity"
-            android:label="@string/title_activity_supplies" >
-        </activity>
-        <activity
             android:name="com.example.glidden.Traditional"
             android:label="@string/title_activity_supplies" >
         </activity>
         <activity
             android:name="com.example.glidden.WoodenSideProject"
             android:label="@string/title_activity_supplies" >
-        </activity>
-        <activity
-            android:name="com.example.glidden.PaintingActivity"
-            android:label="@string/title_activity_painting" >
-        </activity>
-        <activity
-            android:name="com.example.glidden.DescriptionFragment"
-            android:label="@string/title_activity_description_fragment" >
-        </activity>
-        <activity
-            android:name="com.example.glidden.ShoppingFragment"
-            android:label="@string/title_activity_shopping_fragment" >
-        </activity>
-        <activity
-            android:name="com.example.glidden.DirectionsFragment"
-            android:label="@string/title_activity_directions_fragment" >
         </activity>
         <activity
             android:name="com.example.glidden.Modern"
@@ -66,6 +42,58 @@
         <activity
             android:name="com.example.glidden.Eclectic"
             android:label="@string/title_activity_eclectic" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.FireplaceMantel"
+            android:label="@string/title_activity_fireplace_mantel" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.ChevronWallProject"
+            android:label="@string/title_activity_chevron_wall_project" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.ChevronDescFrag"
+            android:label="@string/title_activity_chevron_desc_frag" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.ChevronDircFrag"
+            android:label="@string/title_activity_chevron_dirc_frag" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.ChevronShopFrag"
+            android:label="@string/title_activity_chevron_shop_frag" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.FrontDoorProject"
+            android:label="@string/title_activity_front_door_project" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.FrontDoorDircFrag"
+            android:label="@string/title_activity_front_door_dirc_frag" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.FrontDoorDescFrag"
+            android:label="@string/title_activity_front_door_desc_frag" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.FrontDoorShopFrag"
+            android:label="@string/title_activity_front_door_shop_frag" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.CorkBoardProject"
+            android:label="@string/title_activity_coark_board_project" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.CorkBoardDescFrag"
+            android:label="@string/title_activity_coark_board_desc_frag" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.CorkBoardDircFrag"
+            android:label="@string/title_activity_coark_board_dirc_frag" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.CorkBoardShopFrag"
+            android:label="@string/title_activity_coark_board_shop_frag" >
         </activity>
     </application>
 

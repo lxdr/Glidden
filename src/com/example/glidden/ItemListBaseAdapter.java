@@ -16,11 +16,14 @@ public class ItemListBaseAdapter extends BaseAdapter {
 	
 	private Integer[] imgid = {
 			R.drawable.ic_launcher,
-			R.drawable.ic_launcher,
-			R.drawable.ic_launcher,
-			R.drawable.ic_launcher,
-			R.drawable.ic_launcher,
-			R.drawable.ic_launcher,
+			R.drawable.sidetable,
+			R.drawable.fireplace,
+			R.drawable.chevronwall,
+			R.drawable.diningchairs,
+			R.drawable.bluefrontdoor,
+			R.drawable.boldaccentwall,
+			R.drawable.project_one,
+			R.drawable.beaded_board,
 			};
 	
 	private LayoutInflater l_Inflater;
@@ -47,7 +50,7 @@ public class ItemListBaseAdapter extends BaseAdapter {
 		if (convertView == null) {
 			convertView = l_Inflater.inflate(R.layout.traditional_listview, null);
 			holder = new ViewHolder();
-			holder.txt_itemName = (TextView) convertView.findViewById(R.id.name);
+			holder.txt_itemName = (TextView) convertView.findViewById(R.id.nameTitle);
 			holder.txt_itemDescription = (TextView) convertView.findViewById(R.id.projectDescription);
 			holder.itemImage = (ImageView) convertView.findViewById(R.id.photo);
 

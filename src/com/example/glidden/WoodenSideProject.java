@@ -1,21 +1,15 @@
 package com.example.glidden;
 
 import android.app.ActionBar;
-import android.app.ActionBar.Tab;
 import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
-import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.ListFragment;
-import android.util.Log;
+//import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageButton;
 
 /**
  * This will be a specific project. It will have a picture/video 
@@ -23,13 +17,11 @@ import android.widget.ImageButton;
  * @author alexdrawbond
  */
 public class WoodenSideProject extends FragmentActivity {
-	public static Context appContext;
-	public static String TAG="WoodenSideTable";
-	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.sidetable_project);
+		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 		
 		ActionBar actionBar = getActionBar();
 	    actionBar.setDisplayHomeAsUpEnabled(true);
@@ -38,7 +30,7 @@ public class WoodenSideProject extends FragmentActivity {
     	
 	    ActionBar.Tab tab1 = actionBar.newTab().setText("Description");
 	    ActionBar.Tab tab2 = actionBar.newTab().setText("Shopping List");
-	    ActionBar.Tab tab3 = actionBar.newTab().setText("Directions");
+	    ActionBar.Tab tab3 = actionBar.newTab().setText("Instructions");
 	  
 	    Fragment DescriptionFragment = new SideTableDescFrag();
 	    Fragment ShoppingListFragment = new SideTableShopFrag();
@@ -78,31 +70,3 @@ public class WoodenSideProject extends FragmentActivity {
 		return true;
 	}
 }
-
-/**
- * Swaps fragments based on the tab that is selected.
- * @author alexdrawbond
- */
-class MyTabsListener implements ActionBar.TabListener {
-	public Fragment fragment;
-	
-	public MyTabsListener(Fragment fragment) {
-		this.fragment = fragment;
-	}
-	
-	@Override
-	public void onTabReselected(Tab tab, FragmentTransaction ft) {
-	}
-
-	@Override
-	public void onTabSelected(Tab tab, FragmentTransaction ft) {
-		ft.replace(R.id.fragment_placeholder, fragment);
-	}
-
-	@Override
-	public void onTabUnselected(Tab tab, FragmentTransaction ft) {
-		ft.remove(fragment);
-	}
-}
-	
-
