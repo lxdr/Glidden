@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainItemListBaseAdapter extends BaseAdapter {
-private static ArrayList<ItemDetails> itemDetailsrrayList;
+private static ArrayList<MainItemDetails> itemDetailsarrayList;
 	
 	private Integer[] imgid = {
 			R.drawable.traditional,
@@ -22,17 +22,17 @@ private static ArrayList<ItemDetails> itemDetailsrrayList;
 	
 	private LayoutInflater l_Inflater;
 
-	public MainItemListBaseAdapter(Context context, ArrayList<ItemDetails> results) {
-		itemDetailsrrayList = results;
+	public MainItemListBaseAdapter(Context context, ArrayList<MainItemDetails> results) {
+		itemDetailsarrayList = results;
 		l_Inflater = LayoutInflater.from(context);
 	}
 
 	public int getCount() {
-		return itemDetailsrrayList.size();
+		return itemDetailsarrayList.size();
 	}
 
 	public Object getItem(int position) {
-		return itemDetailsrrayList.get(position);
+		return itemDetailsarrayList.get(position);
 	}
 
 	public long getItemId(int position) {
@@ -51,7 +51,7 @@ private static ArrayList<ItemDetails> itemDetailsrrayList;
 			holder = (ViewHolder) convertView.getTag();
 		}
 		
-		holder.itemImage.setBackgroundResource(imgid[itemDetailsrrayList.get(position).getImageNumber() - 1]);
+		holder.itemImage.setBackgroundResource(imgid[itemDetailsarrayList.get(position).getImageNumber() - 1]);
 
 		return convertView;
 	}

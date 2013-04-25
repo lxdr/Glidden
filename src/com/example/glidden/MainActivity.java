@@ -1,5 +1,7 @@
 package com.example.glidden;
 
+import java.util.ArrayList;
+
 import android.app.ActionBar;
 import android.app.ActionBar.OnNavigationListener;
 import android.app.Activity;
@@ -7,9 +9,11 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
-import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -27,7 +31,7 @@ public class MainActivity extends Activity {
 	private Spinner spinner;
 	
 	//array for title of each project
-		protected String[] PROJECT_NAMES = new String[] {"Traditional", "Modern", "Eclectic", "Cottage"};
+	protected String[] PROJECT_NAMES = new String[] {"Traditional", "Modern", "Eclectic", "Cottage"};
 		
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +42,7 @@ public class MainActivity extends Activity {
 		spinner = (Spinner) findViewById(R.id.spinner);
 		
 		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-		        R.array.categories_array, android.R.layout.simple_spinner_item);
+		 R.array.categories_array, android.R.layout.simple_spinner_item);
 		
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spinner.setAdapter(adapter);
@@ -48,69 +52,12 @@ public class MainActivity extends Activity {
         
         getActionBar().setDisplayShowTitleEnabled(false);
 		
-        //declare buttons
-		button1 = (Button) findViewById(R.id.button1);
-		button2 = (Button) findViewById(R.id.button2);
-		button3 = (Button) findViewById(R.id.button3);
-		button4 = (Button) findViewById(R.id.button4);
-		
-		
-		//go to Tradition class when traditional is clicked
-		button1.setOnClickListener(new OnClickListener()
-		{
-			@Override
-			public void onClick(View v)
-			{
-				//Log.e(TAG, "button pressed");
-				
-				Intent intent = new Intent(v.getContext(), Traditional.class);
-				startActivity(intent);
-			}
-		});
-		
-		//go to Modern class when modern is clicked
-		button2.setOnClickListener(new OnClickListener()
-		{
-					@Override
-					public void onClick(View v)
-					{
-						//Log.e(TAG, "button pressed");
-						
-						Intent intent = new Intent(v.getContext(), Modern.class);
-						startActivity(intent);
-					}
-				});
-				
-		//go to Cottage class when cottage is clicked
-		button3.setOnClickListener(new OnClickListener()
-				{
-					@Override
-					public void onClick(View v)
-					{
-						//Log.e(TAG, "button pressed");
-						
-						Intent intent = new Intent(v.getContext(), Eclectic.class);
-						startActivity(intent);
-					}
-				});
-				
-				//go to Eclectic class when eclectic is clicked
-				button4.setOnClickListener(new OnClickListener()
-				{
-					@Override
-					public void onClick(View v)
-					{
-						//Log.e(TAG, "button pressed");
-						
-						Intent intent = new Intent(v.getContext(), Cottage.class);
-						startActivity(intent);
-					}
-				});
+        
 
-        /*ArrayList<ItemDetails> image_details = GetSearchResults();
+        ArrayList<MainItemDetails> main_image_details = GetSearchResults();
         
         final ListView lv1 = (ListView) findViewById(R.id.listV_main);
-        lv1.setAdapter(new ItemListBaseAdapter(this, image_details));
+        lv1.setAdapter(new MainItemListBaseAdapter(this, main_image_details));
         
       //sets the click listener to the adapter and not a button
       	lv1.setOnItemClickListener(new OnItemClickListener() {
@@ -128,36 +75,10 @@ public class MainActivity extends Activity {
       				}
       			}
       		});
-      	}
-    
-    private ArrayList<ItemDetails> GetSearchResults(){
-    	ArrayList<ItemDetails> results = new ArrayList<ItemDetails>();
-    	
-    	ItemDetails item_details = new ItemDetails();
-    	item_details.setName("Traditional");
-    	item_details.setImageNumber(1);
-    	results.add(item_details);
-    	
-    	item_details = new ItemDetails();
-    	item_details.setName("Modern");
-    	item_details.setImageNumber(2);
-    	results.add(item_details);
-    	
-    	item_details = new ItemDetails();
-    	item_details.setName("Eclectic");
-    	item_details.setImageNumber(3);
-    	results.add(item_details);
-    	
-    	item_details = new ItemDetails();
-    	item_details.setName("Cottage");
-    	item_details.setImageNumber(4);
-    	results.add(item_details);
-    	
-    	return results;
-    }*/
+      	
     	
 		/** Defining Navigation listener */
-        ActionBar.OnNavigationListener navigationListener = new OnNavigationListener()
+        OnNavigationListener navigationListener = new OnNavigationListener()
         {
             @Override
             public boolean onNavigationItemSelected(int itemPosition, long itemId) {
@@ -167,6 +88,32 @@ public class MainActivity extends Activity {
         };
         
         /** Setting dropdown items and item navigation listener for the actionbar */
-       getActionBar().setListNavigationCallbacks(adapter, navigationListener);
+        getActionBar().setListNavigationCallbacks(adapter, navigationListener);
 	}
+	
+	private ArrayList<MainItemDetails> GetSearchResults(){
+    	ArrayList<MainItemDetails> results = new ArrayList<MainItemDetails>();
+    	
+    	MainItemDetails main_item_details = new MainItemDetails();
+    	main_item_details.setName("Traditional");
+    	main_item_details.setImageNumber(1);
+    	results.add(main_item_details);
+    	
+    	main_item_details = new MainItemDetails();
+    	main_item_details.setName("Modern");
+    	main_item_details.setImageNumber(2);
+    	results.add(main_item_details);
+    	
+    	main_item_details = new MainItemDetails();
+    	main_item_details.setName("Eclectic");
+    	main_item_details.setImageNumber(3);
+    	results.add(main_item_details);
+    	
+    	main_item_details = new MainItemDetails();
+    	main_item_details.setName("Cottage");
+    	main_item_details.setImageNumber(4);
+    	results.add(main_item_details);
+    	
+    	return results;
+    }
 }

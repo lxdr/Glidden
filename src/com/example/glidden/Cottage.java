@@ -70,7 +70,7 @@ public class Cottage extends Activity {
     	item_details = new ItemDetails();
     	item_details.setName("BeadedBoardWallPaneling");
     	item_details.setNameTitle("Beaded Board Wall Paneling");
-    	item_details.setProjectDescription("gobbly gook, blahh blah blahh lol rotflol omg nonsenese nonsens oh yea. YOLO!");
+    	item_details.setProjectDescription("Painting these panels can be tricky, but our instructions help you get the most out of these accents. Color match or accentuate to make these parts of your wall pop.");
     	item_details.setImageNumber(9);
     	results.add(item_details);
     	
