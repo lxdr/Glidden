@@ -17,7 +17,7 @@ private static ArrayList<MainItemDetails> itemDetailsarrayList;
 			R.drawable.traditional,
 			R.drawable.modern,
 			R.drawable.eclectic,
-			R.drawable.traditional
+			R.drawable.cottage
 			};
 	
 	private LayoutInflater l_Inflater;
