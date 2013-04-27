@@ -28,8 +28,7 @@ public class MainActivity extends Activity {
 	Button button3;
 	Button button4;
 	private static final String TAG="MainActivity";
-	private Spinner spinner;
-	
+	String[] categories = new String[] {"Theme", "Style"};
 	//array for title of each project
 	protected String[] PROJECT_NAMES = new String[] {"Traditional", "Modern", "Eclectic", "Cottage"};
 		
@@ -39,21 +38,16 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);	
-		spinner = (Spinner) findViewById(R.id.spinner);
 		
-		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-		 R.array.categories_array, android.R.layout.simple_spinner_item);
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(getBaseContext(), android.R.layout.simple_spinner_dropdown_item, categories);
 		
-		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		spinner.setAdapter(adapter);
+		//adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		
         /** Enabling dropdown list navigation for the action bar */
         getActionBar().setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
         
         getActionBar().setDisplayShowTitleEnabled(false);
 		
-        
-
         ArrayList<MainItemDetails> main_image_details = GetSearchResults();
         
         final ListView lv1 = (ListView) findViewById(R.id.listV_main);
@@ -63,8 +57,7 @@ public class MainActivity extends Activity {
       	lv1.setOnItemClickListener(new OnItemClickListener() {
 
       			@Override
-      			public void onItemClick(AdapterView<?> arg0, View v, int position, long id) {
-      				// TODO Auto-generated method stub
+      			public void onItemClick(AdapterView<?> arg0, View v, int position, long id) {      		
       				String openClass = PROJECT_NAMES[position];
       				try{
       					Class selected = Class.forName("com.example.glidden." + openClass);

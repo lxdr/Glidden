@@ -6,20 +6,10 @@
     android:weightSum="1"
     tools:context=".MainActivity" >
 
-   
-    <Spinner
-    android:id="@+id/spinner"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:prompt="@string/glidden"
-    android:spinnerMode="dialog" />
-    
-    
     <TextView
         android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="47dp"
-        android:layout_below="@id/spinner"
         android:text="Select a theme for the type of project you want to paint! YOLO!"
         android:textSize="20sp" />
 	 <ListView
