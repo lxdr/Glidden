@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".TypesFragment" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:text="Select a theme for the type of project you want to paint! YOLO!"
+        android:textSize="20sp" />
+	 <ListView
+        android:id="@+id/listV_main"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView1" >
+    </ListView> 
+    
+</RelativeLayout>

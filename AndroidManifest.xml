@@ -95,6 +95,30 @@
             android:name="com.example.glidden.CorkBoardShopFrag"
             android:label="@string/title_activity_coark_board_shop_frag" >
         </activity>
+        <activity
+            android:name="com.example.glidden.DiningRoomChairsProject"
+            android:label="@string/title_activity_dining_room_chairs_project" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.DiningRoomChairDescFrag"
+            android:label="@string/title_activity_dining_room_chair_desc_frag" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.DIningRoomChairsDircFrag"
+            android:label="@string/title_activity_dining_room_chairs_dirc_frag" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.DiningRoomChairsShopFrag"
+            android:label="@string/title_activity_dining_room_chairs_shop_frag" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.CategoryFragment"
+            android:label="@string/title_activity_category_fragment" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.TypesFragment"
+            android:label="@string/title_activity_types_fragment" >
+        </activity>
     </application>
 
 </manifest>

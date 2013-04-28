@@ -39,5 +39,11 @@
     <string name="title_activity_coark_board_desc_frag">CoarkBoardDescFrag</string>
     <string name="title_activity_coark_board_dirc_frag">CoarkBoardDircFrag</string>
     <string name="title_activity_coark_board_shop_frag">CoarkBoardShopFrag</string>
+    <string name="title_activity_dining_room_chairs_project">DiningRoomChairsProject</string>
+    <string name="title_activity_dining_room_chair_desc_frag">DiningRoomChairDescFrag</string>
+    <string name="title_activity_dining_room_chairs_dirc_frag">DIningRoomChairsDircFrag</string>
+    <string name="title_activity_dining_room_chairs_shop_frag">DiningRoomChairsShopFrag</string>
+    <string name="title_activity_category_fragment">CategoryFragment</string>
+    <string name="title_activity_types_fragment">TypesFragment</string>
 
 </resources>

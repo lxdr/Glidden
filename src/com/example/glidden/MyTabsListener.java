@@ -4,6 +4,7 @@ import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.util.Log;
 
 /**
  * Swaps fragments based on the tab that is selected.
@@ -11,8 +12,10 @@ import android.app.FragmentTransaction;
  */
 public class MyTabsListener implements ActionBar.TabListener {
 	public Fragment fragment;
+	String TAG = "MyTabsListener";
 	
 	public MyTabsListener(Fragment fragment) {
+		Log.e(TAG, "Here!!!");
 		this.fragment = fragment;
 	}
 	
