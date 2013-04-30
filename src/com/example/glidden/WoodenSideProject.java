@@ -53,9 +53,11 @@ public class WoodenSideProject extends FragmentActivity {
 	            Intent intent = new Intent(this, Traditional.class);
 	            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 	            startActivity(intent);
+	    		
 	            return true;
 	        default:
 	            return super.onOptionsItemSelected(item);
+	         
 	    }
 	}
 	
@@ -64,6 +66,7 @@ public class WoodenSideProject extends FragmentActivity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.action_menu, menu);
+		
 		return true;
 	}
 }
