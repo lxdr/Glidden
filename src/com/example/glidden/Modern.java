@@ -65,8 +65,8 @@ public class Modern extends Activity {
 	    	results.add(item_details);
 	    	
 	    	item_details = new ItemDetails();
-	    	item_details.setName("DinningChairs");
-	    	item_details.setNameTitle("Dinning Chairs");
+	    	item_details.setName("DiningChairs");
+	    	item_details.setNameTitle("Dining Chairs");
 	    	item_details.setProjectDescription("Let your dining room dazzle with this makeover for your chairs. Add a pop of color by painting half of the chair.");
 	    	item_details.setImageNumber(5);
 	    	results.add(item_details);
