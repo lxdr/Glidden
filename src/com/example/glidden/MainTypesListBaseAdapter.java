@@ -10,19 +10,19 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MainItemListBaseAdapter extends BaseAdapter {
+public class MainTypesListBaseAdapter extends BaseAdapter {
 private static ArrayList<MainItemDetails> itemDetailsarrayList;
 	
 	private Integer[] imgid = {
-			R.drawable.traditional,
-			R.drawable.modern,
-			R.drawable.eclectic,
-			R.drawable.cottage
+			R.drawable.home_decor,
+			R.drawable.furniture,
+			R.drawable.rooms,
+			R.drawable.outdoor
 			};
 	
 	private LayoutInflater l_Inflater;
 
-	public MainItemListBaseAdapter(Context context, ArrayList<MainItemDetails> results) {
+	public MainTypesListBaseAdapter(Context context, ArrayList<MainItemDetails> results) {
 		itemDetailsarrayList = results;
 		l_Inflater = LayoutInflater.from(context);
 	}

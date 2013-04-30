@@ -10,7 +10,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MainItemListBaseAdapter extends BaseAdapter {
+public class MainCategoriesListBaseAdapter extends BaseAdapter
+{
 private static ArrayList<MainItemDetails> itemDetailsarrayList;
 	
 	private Integer[] imgid = {
@@ -22,7 +23,7 @@ private static ArrayList<MainItemDetails> itemDetailsarrayList;
 	
 	private LayoutInflater l_Inflater;
 
-	public MainItemListBaseAdapter(Context context, ArrayList<MainItemDetails> results) {
+	public MainCategoriesListBaseAdapter(Context context, ArrayList<MainItemDetails> results) {
 		itemDetailsarrayList = results;
 		l_Inflater = LayoutInflater.from(context);
 	}

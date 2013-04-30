@@ -66,7 +66,7 @@ public class Eclectic extends Activity {
     	item_details = new ItemDetails();
     	item_details.setName("BoldAccentWall");
     	item_details.setNameTitle("Bold Accent Wall");
-    	item_details.setProjectDescription("gobbly gook, blahh blah blahh lol rotflol omg nonsenese nonsens oh yea. YOLO!");
+    	item_details.setProjectDescription("Bring dimension to the room with a bright wall. Use contrasting colors or just go deeper, darker and brighter to make your room new again.");
     	item_details.setImageNumber(7);
     	results.add(item_details);
     	

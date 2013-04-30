@@ -73,7 +73,7 @@ public class Traditional extends Activity
     	item_details = new ItemDetails();
     	item_details.setName("FireplaceMantel");
     	item_details.setNameTitle("Fireplace Mantel");
-    	item_details.setProjectDescription("gobbly gook, blahh blah blahh lol rotflol omg nonsenese nonsens oh yea. YOLO!");
+    	item_details.setProjectDescription("A fireplace is the focal point for any room, but a dinged up fireplace is an eyesore. Fix up your fireplace with our helpful directions.");
     	item_details.setImageNumber(3);
     	results.add(item_details);
     	
