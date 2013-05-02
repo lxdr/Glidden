@@ -25,8 +25,8 @@ public class CategoryFragment extends Fragment {
 		ArrayList<MainItemDetails> main_image_details = GetSearchResultsCategories();
 
 		final ListView lv1 = (ListView) view.findViewById(R.id.listV_main);
-		lv1.setAdapter(new MainCategoriesListBaseAdapter(getActivity(), main_image_details));
-
+		lv1.setAdapter(new MainItemListBaseAdapter(getActivity(), main_image_details));
+		
 		//sets the click listener to the adapter and not a button
 		lv1.setOnItemClickListener(new OnItemClickListener() {
 

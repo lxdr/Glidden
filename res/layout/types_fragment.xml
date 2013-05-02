@@ -13,9 +13,9 @@
         android:text="Select a theme for the type of project you want to paint! YOLO!"
         android:textSize="20sp"
         android:textColor="@android:color/white"
-        android:background="#4682B4"/>"
+        android:background="#4682B4"/>
 	 <ListView
-        android:id="@+id/listV_main"
+        android:id="@+id/listV_main2"
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/textView1" >
