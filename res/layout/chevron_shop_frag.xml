@@ -8,25 +8,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".ChevronShopFrag" >
 
-<TextView
-        android:id="@+id/textView1"
-        style="text-align:justify"
-        android:gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:text="Chevron Walls for All"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
     <ListView
         android:id="@+id/shopping_list_view"
         android:layout_width="fill_parent"
         android:layout_height="327dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="16dp" >
+        android:layout_alignParentTop="true" >
+
     </ListView>
 </RelativeLayout>
