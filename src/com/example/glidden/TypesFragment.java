@@ -22,8 +22,8 @@ public class TypesFragment extends Fragment {
 		
 		ArrayList<MainItemDetails> main_image_details = GetSearchResultsTypes();
 
-		final ListView lv1 = (ListView) view.findViewById(R.id.listV_main);
-		lv1.setAdapter(new MainTypesListBaseAdapter(getActivity(), main_image_details));
+		final ListView lv1 = (ListView) view.findViewById(R.id.listV_main2);
+		lv1.setAdapter(new MainItemListBaseAdapter(getActivity(), main_image_details));
 
 		//sets the click listener to the adapter and not a button
 		lv1.setOnItemClickListener(new OnItemClickListener() {
@@ -50,22 +50,22 @@ public class TypesFragment extends Fragment {
 
 		MainItemDetails main_item_details = new MainItemDetails();
 		main_item_details.setName("Home Decor");
-		main_item_details.setImageNumber(1);
+		main_item_details.setImageNumber(5);
 		results.add(main_item_details);
 
 		main_item_details = new MainItemDetails();
 		main_item_details.setName("Furniture");
-		main_item_details.setImageNumber(2);
+		main_item_details.setImageNumber(6);
 		results.add(main_item_details);
 
 		main_item_details = new MainItemDetails();
 		main_item_details.setName("Rooms");
-		main_item_details.setImageNumber(3);
+		main_item_details.setImageNumber(7);
 		results.add(main_item_details);
 
 		main_item_details = new MainItemDetails();
 		main_item_details.setName("Outdoor");
-		main_item_details.setImageNumber(4);
+		main_item_details.setImageNumber(8);
 		results.add(main_item_details);
 
 		return results;
