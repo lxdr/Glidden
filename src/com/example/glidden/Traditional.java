@@ -65,15 +65,15 @@ public class Traditional extends Activity
     	
     	ItemDetails item_details = new ItemDetails();
     	item_details.setName("WoodenSideProject");
-    	item_details.setNameTitle("Wooden Side Project");
-    	item_details.setProjectDescription("Spruce up an old side table with this quick and easy how-to. Take a weekend to bring a new centerpiece to your room.");
+    	item_details.setNameTitle("Wooden Side Table");
+    	item_details.setProjectDescription("Spruce up an old side table with this quick and easy how-to...");
     	item_details.setImageNumber(2);
     	results.add(item_details);
     	
     	item_details = new ItemDetails();
     	item_details.setName("FireplaceMantel");
     	item_details.setNameTitle("Fireplace Mantel");
-    	item_details.setProjectDescription("A fireplace is the focal point for any room, but a dinged up fireplace is an eyesore. Fix up your fireplace with our helpful directions.");
+    	item_details.setProjectDescription("A fireplace is the focal point for any room, but a dinged up fireplace is an eyesore...");
     	item_details.setImageNumber(3);
     	results.add(item_details);
     	

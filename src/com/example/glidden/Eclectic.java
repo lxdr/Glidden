@@ -59,14 +59,14 @@ public class Eclectic extends Activity {
     	ItemDetails item_details = new ItemDetails();
     	item_details.setName("FrontDoor");
     	item_details.setNameTitle("Front Door");
-    	item_details.setProjectDescription("There's nothing like a good first impression. Paint your door a bright color to bring a pop to any home.");
+    	item_details.setProjectDescription("There's nothing like a good first impression. Paint your door a bright...");
     	item_details.setImageNumber(6);
     	results.add(item_details);
     	
     	item_details = new ItemDetails();
     	item_details.setName("BoldAccentWall");
     	item_details.setNameTitle("Bold Accent Wall");
-    	item_details.setProjectDescription("Bring dimension to the room with a bright wall. Use contrasting colors or just go deeper, darker and brighter to make your room new again.");
+    	item_details.setProjectDescription("Bring dimension to the room with a bright wall. Use contrasting colors or just go deeper...");
     	item_details.setImageNumber(7);
     	results.add(item_details);
     	

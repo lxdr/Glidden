@@ -60,14 +60,14 @@ public class Modern extends Activity {
 	    	ItemDetails item_details = new ItemDetails();
 	    	item_details.setName("ChevronWall");
 	    	item_details.setNameTitle("Chevron Wall");
-	    	item_details.setProjectDescription("A new trend in design found on furniture, clothes and purses can now be found on your walls. Take a weekend to give your room this modern twist.");
+	    	item_details.setProjectDescription("A new trend in design found on furniture, clothes and purses can...");
 	    	item_details.setImageNumber(4);
 	    	results.add(item_details);
 	    	
 	    	item_details = new ItemDetails();
 	    	item_details.setName("DiningChairs");
 	    	item_details.setNameTitle("Dining Chairs");
-	    	item_details.setProjectDescription("Let your dining room dazzle with this makeover for your chairs. Add a pop of color by painting half of the chair.");
+	    	item_details.setProjectDescription("Let your dining room dazzle with this makeover for your chairs...");
 	    	item_details.setImageNumber(5);
 	    	results.add(item_details);
 	    	
