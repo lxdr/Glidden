@@ -6,10 +6,10 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-//import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+//import android.util.Log;
 
 /**
  * This will be a specific project. It will have a picture/video 
@@ -66,6 +66,8 @@ public class WoodenSideProject extends FragmentActivity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.action_menu, menu);
+		
+		
 		
 		return true;
 	}
