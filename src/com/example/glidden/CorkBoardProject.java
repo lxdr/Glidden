@@ -9,8 +9,11 @@ import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ShareActionProvider;
 
 public class CorkBoardProject extends FragmentActivity {
+	
+	private ShareActionProvider myShareActionProvider;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +62,20 @@ public class CorkBoardProject extends FragmentActivity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.action_menu, menu);
+		
+		MenuItem item = menu.findItem(R.id.menu_item_share);
+	     myShareActionProvider = (ShareActionProvider)item.getActionProvider();
+	     myShareActionProvider.setShareHistoryFileName(
+	       ShareActionProvider.DEFAULT_SHARE_HISTORY_FILE_NAME);
+	     myShareActionProvider.setShareIntent(createShareIntent());
+		
 		return true;
 	}
+	
+	private Intent createShareIntent() {
+		  Intent shareIntent = new Intent(Intent.ACTION_SEND);
+		        shareIntent.setType("text/plain");
+		        shareIntent.putExtra(Intent.EXTRA_TEXT, "It works!");
+		        return shareIntent;
+		    }
 }
