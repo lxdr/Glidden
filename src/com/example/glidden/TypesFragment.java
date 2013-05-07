@@ -13,7 +13,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 public class TypesFragment extends Fragment {
-	protected String[] PROJECT_TYPES = new String[] {"Home Decor", "Furniture", "Rooms", "Outdoor"};
+	protected String[] PROJECT_TYPES = new String[] {"HomeDecor", "Furniture", "Walls", "Outdoor"};
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) 

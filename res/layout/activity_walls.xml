@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".Walls" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wall Projects"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:background="#4682B4" />
+    
+    <ListView
+        android:id="@+id/projects4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/textView1" >
+
+    </ListView>
+    
+</RelativeLayout>

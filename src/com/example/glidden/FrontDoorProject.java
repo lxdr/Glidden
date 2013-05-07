@@ -11,7 +11,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 public class FrontDoorProject extends FragmentActivity {
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -61,5 +60,4 @@ public class FrontDoorProject extends FragmentActivity {
 		inflater.inflate(R.menu.action_menu, menu);
 		return true;
 	}
-
 }

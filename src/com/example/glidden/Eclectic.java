@@ -15,7 +15,7 @@ import android.widget.ListView;
 
 public class Eclectic extends Activity {
 	//array for title of each project
-	protected String[] PROJECT_NAMES = new String[] {"FrontDoorProject", "BoldAccentWall"};
+	protected String[] PROJECT_NAMES = new String[] {"FrontDoorProject", "AccentWallProject"};
 		
 	
 	@Override

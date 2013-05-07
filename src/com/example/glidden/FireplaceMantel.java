@@ -1,16 +1,13 @@
 package com.example.glidden;
 
 import android.app.ActionBar;
-import android.app.Activity;
+import android.app.Fragment;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
 
-public class FireplaceMantel extends Activity {
+public class FireplaceMantel extends FragmentActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -18,17 +15,24 @@ public class FireplaceMantel extends Activity {
 		
 		ActionBar actionBar = getActionBar();
 	    actionBar.setDisplayHomeAsUpEnabled(true);
+	    actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 	    setTitle("Fireplace Mantel");
-		
-		Button buttonYT = (Button) findViewById(R.id.button1);
-		buttonYT.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v){
-				startActivity(new Intent(
-						Intent.ACTION_VIEW, 
-                        Uri.parse("http://www.youtube.com/watch?v=vSYadh2xmcI")));
-			}
-		});
+    	
+	    ActionBar.Tab tab1 = actionBar.newTab().setText("Description");
+	    ActionBar.Tab tab2 = actionBar.newTab().setText("Shopping List");
+	    ActionBar.Tab tab3 = actionBar.newTab().setText("Instructions");
+	  
+	    Fragment DescriptionFragment = new FireplaceMantelDescFrag();
+	    Fragment ShoppingListFragment = new FireplaceMantelShopFrag();
+	    Fragment DirectionsListFragment = new FireplaceMantelDircFrag();
+	    
+	    tab1.setTabListener(new MyTabsListener(DescriptionFragment));
+	    tab2.setTabListener(new MyTabsListener(ShoppingListFragment));
+	    tab3.setTabListener(new MyTabsListener(DirectionsListFragment));
+	    
+	    actionBar.addTab(tab1);
+	    actionBar.addTab(tab2);
+	    actionBar.addTab(tab3);
 	}
 
 	//Navigate up using logo.
@@ -46,6 +50,4 @@ public class FireplaceMantel extends Activity {
 				return super.onOptionsItemSelected(item);
 			}
 		}
-
-
 }

@@ -45,5 +45,29 @@
     <string name="title_activity_dining_room_chairs_shop_frag">DiningRoomChairsShopFrag</string>
     <string name="title_activity_category_fragment">CategoryFragment</string>
     <string name="title_activity_types_fragment">TypesFragment</string>
+    <string name="title_activity_accent_wall_project">AccentWallProject</string>
+    <string name="title_activity_accent_wall_desc_frag">AccentWallDescFrag</string>
+    <string name="title_activity_accent_wall_dirc_frag">AccentWallDircFrag</string>
+    <string name="title_activity_accent_wall_shop_frag">AccentWallShopFrag</string>
+    <string name="title_activity_bed_panel_project">BedPannelProject</string>
+    <string name="title_activity_bed_panel_desc_frag">BedPanelDescFrag</string>
+    <string name="title_activity_bed_panel_dirc_frag">BedPanelDircFrag</string>
+    <string name="title_activity_bed_panel_shop_frag">BedPanelShopFrag</string>
+    <string name="title_activity_fireplace_mantel_dirc_frag">FireplaceMantelDircFrag</string>
+    <string name="title_activity_fireplace_mantel_desc_frag">FireplaceMantelDescFrag</string>
+    <string name="title_activity_fireplace_mantel_shop_frag">FireplaceMantelShopFrag</string>
+    <string name="title_activity_accent_wall_project2">AccentWallProject2</string>
+    <string name="title_activity_walls">Walls</string>
+    <string name="title_activity_chevron_wall_project2">ChevronWallProject2</string>
+    <string name="title_activity_bed_panel_project2">BedPanelProject2</string>
+    <string name="title_activity_fireplace_mantel2">FireplaceMantel2</string>
+    <string name="title_activity_home_decor">HomeDecor</string>
+    <string name="title_activity_cork_board_project2">CorkBoardProject2</string>
+    <string name="title_activity_video">Video</string>
+    <string name="title_activity_dining_room_chairs_project2">DiningRoomChairsProject2</string>
+    <string name="title_activity_furniture">Furniture</string>
+    <string name="title_activity_wooden_side_project2">WoodenSideProject2</string>
+    <string name="title_activity_front_door_project2">FrontDoorProject2</string>
+    <string name="title_activity_outdoor">Outdoor</string>
 
 </resources>

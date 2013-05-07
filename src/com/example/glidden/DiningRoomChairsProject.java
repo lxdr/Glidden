@@ -61,5 +61,4 @@ public class DiningRoomChairsProject extends FragmentActivity
 		inflater.inflate(R.menu.action_menu, menu);
 		return true;
 	}
-
 }

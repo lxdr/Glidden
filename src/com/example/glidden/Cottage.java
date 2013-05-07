@@ -14,9 +14,8 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 public class Cottage extends Activity {
-	
 	//array for title of each project
-	protected String[] PROJECT_NAMES = new String[] {"CorkBoardProject", "BeadedBoardWallPaneling"};
+	protected String[] PROJECT_NAMES = new String[] {"CorkBoardProject", "BedPanelProject"};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -64,8 +63,8 @@ public class Cottage extends Activity {
     	results.add(item_details);
     	
     	item_details = new ItemDetails();
-    	item_details.setName("BeadedBoardWallPaneling");
-    	item_details.setNameTitle("Beaded Board Wall Paneling");
+    	item_details.setName("BeadedBoardPaneling");
+    	item_details.setNameTitle("Beaded Board Paneling");
     	item_details.setProjectDescription("Painting these panels can be tricky, but our instructions help you get the most...");
     	item_details.setImageNumber(9);
     	results.add(item_details);

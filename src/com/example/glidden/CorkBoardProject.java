@@ -12,7 +12,6 @@ import android.view.MenuItem;
 import android.widget.ShareActionProvider;
 
 public class CorkBoardProject extends FragmentActivity {
-	
 	private ShareActionProvider myShareActionProvider;
 
 	@Override

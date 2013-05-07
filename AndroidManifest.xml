@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="13"
+        android:minSdkVersion="14"
         android:targetSdkVersion="17" />
 
     <application
@@ -118,6 +118,102 @@
         <activity
             android:name="com.example.glidden.TypesFragment"
             android:label="@string/title_activity_types_fragment" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.AccentWallProject"
+            android:label="@string/title_activity_accent_wall_project" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.AccentWallDescFrag"
+            android:label="@string/title_activity_accent_wall_desc_frag" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.AccentWallDircFrag"
+            android:label="@string/title_activity_accent_wall_dirc_frag" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.AccentWallShopFrag"
+            android:label="@string/title_activity_accent_wall_shop_frag" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.BedPanelProject"
+            android:label="@string/title_activity_bed_panel_project" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.BedPanelDescFrag"
+            android:label="@string/title_activity_bed_panel_desc_frag" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.BedPanelDircFrag"
+            android:label="@string/title_activity_bed_panel_dirc_frag" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.BedPanelShopFrag"
+            android:label="@string/title_activity_bed_panel_shop_frag" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.FireplaceMantelDircFrag"
+            android:label="@string/title_activity_fireplace_mantel_dirc_frag" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.FireplaceMantelDescFrag"
+            android:label="@string/title_activity_fireplace_mantel_desc_frag" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.FireplaceMantelShopFrag"
+            android:label="@string/title_activity_fireplace_mantel_shop_frag" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.AccentWallProject2"
+            android:label="@string/title_activity_accent_wall_project2" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.Walls"
+            android:label="@string/title_activity_walls" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.ChevronWallProject2"
+            android:label="@string/title_activity_chevron_wall_project2" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.BedPanelProject2"
+            android:label="@string/title_activity_bed_panel_project2" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.FireplaceMantel2"
+            android:label="@string/title_activity_fireplace_mantel2" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.HomeDecor"
+            android:label="@string/title_activity_home_decor" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.CorkBoardProject2"
+            android:label="@string/title_activity_cork_board_project2" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.Video"
+            android:label="@string/title_activity_video" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.DiningRoomChairsProject2"
+            android:label="@string/title_activity_dining_room_chairs_project2" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.Furniture"
+            android:label="@string/title_activity_furniture" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.WoodenSideProject2"
+            android:label="@string/title_activity_wooden_side_project2" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.FrontDoorProject2"
+            android:label="@string/title_activity_front_door_project2" >
+        </activity>
+        <activity
+            android:name="com.example.glidden.Outdoor"
+            android:label="@string/title_activity_outdoor" >
         </activity>
     </application>
 

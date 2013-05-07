@@ -6,14 +6,11 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
 public class ChevronWallProject extends FragmentActivity {
-	static String TAG = "ChevronWallProject";
-	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -40,7 +37,6 @@ public class ChevronWallProject extends FragmentActivity {
 	    actionBar.addTab(tab1);
 	    actionBar.addTab(tab2);
 	    actionBar.addTab(tab3);
-	    Log.e(TAG, "HERE!!!");
 	}
 
 	//Navigate up using logo
