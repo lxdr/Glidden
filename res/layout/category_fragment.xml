@@ -6,19 +6,12 @@
     android:weightSum="1"
     tools:context=".CategoryFragment" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:text="Select a decorating theme to discover your new project or touch the button above to sort by project types."
-        android:textSize="20sp"
-        android:gravity="center"
-        android:textColor="@android:color/white"
-        android:background="#4682B4" />
 	 <ListView
         android:id="@+id/listV_main"
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+		android:dividerHeight="3sp"
         android:layout_below="@id/textView1" >
     </ListView> 
     

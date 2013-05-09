@@ -9,8 +9,8 @@
     <TextView
         android:id="@+id/textView1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Traditional Projects"
+        android:layout_height="50dp"
+        android:text="traditional style projects"
         android:textSize="25sp"
         android:textColor="@android:color/white"
         android:gravity="center"
@@ -19,8 +19,9 @@
     <ListView
         android:id="@+id/projects"
         android:layout_width="fill_parent"
+        android:divider="@android:color/black"
+        android:dividerHeight="0.5sp"
         android:layout_height="342dp"
-        android:paddingLeft="10dp"
         android:layout_below="@id/textView1" >
 
     </ListView>
