@@ -8,6 +8,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".FrontDoorDircFrag" >
 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/front_door" />
+
     <ListView
         android:id="@+id/directions_list_view"
         android:layout_width="fill_parent"
@@ -15,16 +25,8 @@
         android:layout_alignLeft="@+id/imageView1"
         android:layout_alignParentBottom="true"
         android:layout_below="@+id/imageView1"
-        android:layout_marginTop="29dp" >
+        android:layout_marginTop="19dp" >
 
     </ListView>
-
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="300sp"
-        android:layout_height="250sp"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/front_door" />
 
 </RelativeLayout>

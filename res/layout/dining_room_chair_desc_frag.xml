@@ -10,20 +10,20 @@
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="300sp"
-        android:layout_height="250sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
         android:src="@drawable/dining_chairs" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/imageView1"
-        android:layout_alignTop="@+id/imageView1"
-        android:layout_marginTop="218dp"
-        android:gravity="center"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_centerVertical="true"
+        android:gravity="left"
         android:text="Let your dining room dazzle with this makeover for your chairs. Add a pop of color by painting half of the chair."
         android:textAppearance="?android:attr/textAppearanceMedium" />
 

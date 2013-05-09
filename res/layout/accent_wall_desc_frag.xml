@@ -12,8 +12,9 @@
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
         android:src="@drawable/accent_wall" />
 
     <TextView
@@ -22,7 +23,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView1"
         android:layout_centerHorizontal="true"
-        android:gravity="center"
+        android:layout_marginTop="22dp"
+        android:gravity="left"
         android:text="Bring dimension to the room with a bright wall. Use contrasting colors or just go deeper, darker and brighter to make your room new again. Re-doing one wall can recreate your entire room with these simple steps."
         android:textAppearance="?android:attr/textAppearanceMedium" />
 

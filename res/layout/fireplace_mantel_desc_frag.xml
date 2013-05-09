@@ -12,17 +12,19 @@
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
         android:src="@drawable/fireplace_mantel" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
         android:layout_below="@+id/imageView1"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
+        android:layout_marginTop="18dp"
+        android:gravity="left"
         android:text="A fireplace is the focal point for any room, but a dinged up fireplace is an eyesore. Fix up your fireplace with our helpful directions. You can delight in a fireplace painted in a color that accentuates your room. "
         android:textAppearance="?android:attr/textAppearanceMedium" />
 

@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
         android:src="@drawable/bed_panel" />
 
     <ListView
@@ -22,7 +23,8 @@
         android:layout_height="227dp"
         android:layout_alignLeft="@+id/imageView1"
         android:layout_alignParentBottom="true"
-        android:layout_below="@+id/imageView1" >
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="19dp" >
 
     </ListView>
 
