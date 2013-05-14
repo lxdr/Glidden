@@ -16,7 +16,7 @@ public class CorkBoardDircFrag extends Fragment
 			"3. Place newspapers or a tarp to create a work surface and place the frame on it. Place the frame front " +
 			"side up—the part that will be painted.", "4. Use the stir stick to mix the paint.", "5. Paint an even layer " +
 			"over the frame using the brush. Add another coat after the first has completely dried. Reassemble the " +
-			"frame around the corkboard rather than the glass insert when the second coat of paint is dry"};
+			"frame around the corkboard rather than the glass insert when the second coat of paint is dry."};
 	ListView lView1;
 	
 	@Override

@@ -25,7 +25,7 @@
         android:layout_below="@+id/imageView1"
         android:layout_marginTop="13dp"
         android:gravity="left"
-        android:text="Bland boards make for boring walls. Bump up your reminder board’s look with a picture frame in your favorite color."
+        android:text=" Bland boards make for boring walls. Bump up your reminder board’s look with a picture frame in your favorite color. An afternoon of work and you’ll have a bright reminder board to keep you on track."
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

@@ -26,7 +26,7 @@ public class WoodenSideProject extends FragmentActivity {
 		ActionBar actionBar = getActionBar();
 	    actionBar.setDisplayHomeAsUpEnabled(true);
 	    actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-	    setTitle("WoodenSideProject");
+	    setTitle("Wooden Side Table");
     	
 	    ActionBar.Tab tab1 = actionBar.newTab().setText("Description");
 	    ActionBar.Tab tab2 = actionBar.newTab().setText("Shopping List");

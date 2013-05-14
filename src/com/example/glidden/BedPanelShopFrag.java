@@ -10,9 +10,8 @@ import android.widget.ListView;
 
 public class BedPanelShopFrag extends Fragment
 {
-	private String[] shopping_items = {"Painter’s tape", "2-3” chip brush", "Foam roller", "GliddenTM paint — Color: " +
-			"We used Lavender Cloud and Antique Purple! Type: Glidden® High EnduranceTM Plus, Glidden® High EnduranceTM, " +
-			"or Glidden® High EnduranceTM Grab-N-Go"};
+	private String[] shopping_items = {"Painter’s tape", "2-3” chip brush", "Foam roller",
+			"Glidden® High EnduranceTM Plus in Lavender Cloud and Antique Purple"};
 	private ListView lView1;
 
 	@Override

@@ -16,7 +16,7 @@ public class CorkBoardShopFrag extends Fragment
 	private ShareActionProvider myShareActionProvider;
 	
 	private String[] shopping_items = {"Picture frame", "Corkboard (cut to fit your picture frame)", "1-1.5Ó brush", 
-			"Stir stick", "Glidden ____ paint"};
+			"Glidden¨ High EnduranceTM Grab-N-Go in White Sage"};
 	
 	private ListView lView1;
 	

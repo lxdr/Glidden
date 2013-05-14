@@ -10,8 +10,7 @@ import android.widget.ListView;
 
 public class FireplaceMantelShopFrag extends Fragment {
 	private String[] shopping_items = {"Paint remover", "Putty knife", "Wood filler", "100-grit sandpaper", 
-			"Painter’s tape", "3” brush", "Drop cloth", "Work gloves", "GliddenTM paint — Color: We used Dove White!" +
-			" Type: Glidden® High EnduranceTM, or Glidden® High EnduranceTM Grab-N-Go"};
+			"Painter’s tape", "3” brush", "Drop cloth", "Work gloves", "Glidden® High EnduranceTM Grab-N-Go in Dove White"};
 	private ListView lView1;
 
 	@Override

@@ -16,7 +16,7 @@ import android.widget.ListView;
 public class SideTableShopFrag extends Fragment
 {	
 	private String[] shopping_items = {"Sander or paint stripper", "Dropcloth", "Rags", 
-			"Painters tape", "2-2.5Ó brush", "Glidden ____ paint (amounts vary by size)" };
+			"Painters tape", "2-2.5Ó brush", "Glidden¨ Brilliance Collection¨ 2N1TM Paint+Primer in Sweet Baby Girl)" };
 	
 	private ListView lView1;
 	

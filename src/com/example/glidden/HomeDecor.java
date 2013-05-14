@@ -16,7 +16,7 @@ import android.widget.AdapterView.OnItemClickListener;
 
 public class HomeDecor extends Activity {
 			//array for title of each project
-			protected String[] PROJECT_NAMES = new String[] {"CorkBoardProject2", "Video"};
+			protected String[] PROJECT_NAMES = new String[] {"CorkBoardProject2"};
 
 			@Override
 			protected void onCreate(Bundle savedInstanceState) {
@@ -61,13 +61,6 @@ public class HomeDecor extends Activity {
 		    	item_details.setNameTitle("Corkboard Frame");
 		    	item_details.setProjectDescription("Bland boards make for boring walls. Bump up your reminder board’s...");
 		    	item_details.setImageNumber(8);
-		    	results.add(item_details);
-		    	
-		    	item_details = new ItemDetails();
-		    	item_details.setName("Video");
-		    	item_details.setNameTitle("Video");
-		    	item_details.setProjectDescription("Fight Drake Fight!");
-		    	item_details.setImageNumber(7);
 		    	results.add(item_details);
 		    	
 		    	return results;

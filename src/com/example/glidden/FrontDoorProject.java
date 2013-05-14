@@ -20,7 +20,7 @@ public class FrontDoorProject extends FragmentActivity {
 		ActionBar actionBar = getActionBar();
 	    actionBar.setDisplayHomeAsUpEnabled(true);
 	    actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-	    setTitle("Re-Do Your Door");
+	    setTitle("Front Door");
     	
 	    ActionBar.Tab tab1 = actionBar.newTab().setText("Description");
 	    ActionBar.Tab tab2 = actionBar.newTab().setText("Shopping List");

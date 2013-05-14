@@ -11,8 +11,7 @@ import android.widget.ListView;
 public class DiningRoomChairsShopFrag extends Fragment
 {
 	private String[] shopping_items = {"Medium grade sander", "3” brush", "Dropcloth", "Painter’s tape",
-			"Measuring tape", "Pencil", "GliddenTM paint — Color: We used white! Type: Glidden® Brilliance Collection®",
-			"2N1TM Paint+Primer, or Glidden® High EnduranceTM Grab-N-Go"};
+			"Measuring tape", "Pencil", "Glidden® High EnduranceTM Grab-N-Go in White"};
 	
 	private ListView lView1;
 	
