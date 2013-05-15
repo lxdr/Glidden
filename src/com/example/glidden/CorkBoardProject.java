@@ -24,7 +24,7 @@ public class CorkBoardProject extends FragmentActivity {
 		ActionBar actionBar = getActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-		setTitle("Creative Coarkboard");
+		setTitle("Corkboard Frame");
 
 		ActionBar.Tab tab1 = actionBar.newTab().setText("Description");
 		ActionBar.Tab tab2 = actionBar.newTab().setText("Shopping List");
@@ -41,27 +41,6 @@ public class CorkBoardProject extends FragmentActivity {
 		actionBar.addTab(tab1);
 		actionBar.addTab(tab2);
 		actionBar.addTab(tab3);
-
-	    actionBar.setDisplayHomeAsUpEnabled(true);
-	    actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-	    setTitle("Corkboard Frame");
-    	
-	    ActionBar.Tab tab1 = actionBar.newTab().setText("Description");
-	    ActionBar.Tab tab2 = actionBar.newTab().setText("Shopping List");
-	    ActionBar.Tab tab3 = actionBar.newTab().setText("Instructions");
-	  
-	    Fragment DescriptionFragment = new CorkBoardDescFrag();
-	    Fragment ShoppingListFragment = new CorkBoardShopFrag();
-	    Fragment DirectionsListFragment = new CorkBoardDircFrag();
-	    
-	    tab1.setTabListener(new MyTabsListener(DescriptionFragment));
-	    tab2.setTabListener(new MyTabsListener(ShoppingListFragment));
-	    tab3.setTabListener(new MyTabsListener(DirectionsListFragment));
-	    
-	    actionBar.addTab(tab1);
-	    actionBar.addTab(tab2);
-	    actionBar.addTab(tab3);
-
 	}
 
 	//Navigate up using logo

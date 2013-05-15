@@ -4,7 +4,9 @@ import java.util.ArrayList;
 
 import android.app.Fragment;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +16,7 @@ import android.widget.ListView;
 
 public class TypesFragment extends Fragment {
 	protected String[] PROJECT_TYPES = new String[] {"HomeDecor", "Furniture", "Walls", "Outdoor"};
-	
+
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) 
 	{
@@ -24,16 +26,25 @@ public class TypesFragment extends Fragment {
 
 		final ListView lv1 = (ListView) view.findViewById(R.id.listV_main2);
 		lv1.setAdapter(new MainItemListBaseAdapter(getActivity(), main_image_details));
-
+		
+		final SharedPreferences settings2 = this.getActivity().getSharedPreferences("SpinnerFile", 0);
 		//sets the click listener to the adapter and not a button
 		lv1.setOnItemClickListener(new OnItemClickListener() {
-
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View v, int position, long id) {      		
 				String openClass = PROJECT_TYPES[position];
 				try{
 					Class selected = Class.forName("com.example.glidden." + openClass);
 					Intent intent = new Intent(v.getContext(), selected);
+					
+					if (settings2.getInt("spinner", 0) == 0)
+						settings2.edit().putInt("spinner", 1).commit();
+					
+					else if (settings2.getInt("spinner", 0) == 1)
+						settings2.edit().putInt("spinner", 0).commit();
+	
+					settings2.edit().putBoolean("instance", false).commit();
+					
 					startActivity(intent);
 				}catch (ClassNotFoundException e){
 					e.printStackTrace();

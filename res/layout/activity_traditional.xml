@@ -18,11 +18,10 @@
     
     <ListView
         android:id="@+id/projects"
-        android:layout_width="fill_parent"
-        android:divider="@android:color/black"
-        android:dividerHeight="0.5sp"
+        android:layout_width="wrap_content"
         android:layout_height="342dp"
-        android:layout_below="@id/textView1" >
+        android:divider="@android:color/black"
+        android:dividerHeight="0.5sp" >
 
     </ListView>
 

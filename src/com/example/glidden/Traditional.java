@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -45,7 +46,6 @@ public class Traditional extends Activity
 
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View v, int position, long id) {
-				// TODO Auto-generated method stub
 				String openClass = PROJECT_NAMES[position];
 				try{
 					Class selected = Class.forName("com.example.glidden." + openClass);
