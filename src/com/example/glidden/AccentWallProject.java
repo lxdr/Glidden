@@ -9,8 +9,12 @@ import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ShareActionProvider;
 
 public class AccentWallProject extends FragmentActivity {
+	
+	private ShareActionProvider myShareActionProvider;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -60,6 +64,36 @@ public class AccentWallProject extends FragmentActivity {
 			
 			MenuInflater inflater = getMenuInflater();
 			inflater.inflate(R.menu.action_menu, menu);
+			
+			MenuItem item = menu.findItem(R.id.menu_item_share);
+		     myShareActionProvider = (ShareActionProvider)item.getActionProvider();
+		     myShareActionProvider.setShareHistoryFileName(
+		       ShareActionProvider.DEFAULT_SHARE_HISTORY_FILE_NAME);
+		     myShareActionProvider.setShareIntent(createShareIntent());
+			
 			return true;
+		}
+		
+		private Intent createShareIntent() {
+			
+			Intent shareIntent = new Intent(Intent.ACTION_SEND);
+			shareIntent.setType("text/plain");
+			String accentWallShare = "Bring dimension to the room with a bright wall. " +
+					"Use contrasting colors or just go deeper, darker and brighter to make your room new again. " +
+					"Re-doing one wall can recreate your entire room with these simple steps."+
+					"\n"+
+					"\nDrop cloth"+ "\n2-3” brush"+ "\nRoller with extension handle"+ "\nPaint tray"+ "\nPainter’s tape"+
+					"\nGliddenTM paint — Color: We used Pink Salmon! Type: Glidden® High EnduranceTM Plus, Glidden® " +
+					"High EnduranceTM, or Glidden® High EnduranceTMGrab-N-Go" +
+					"\n"+
+					"\n1. Tape off the surrounding walls’ edges as well as any trim and molding you don’t wish to paint."+
+					"\n2. Lay drop cloths over the floor and any furniture you aren’t moving away from the wall."+ 
+					"\n3. Start using the brush to create a 2-3” border around the edge of the wall."+ 
+					"\n4. Paint from ceiling to baseboards in blocks that are roughly 4 x 4 feet, first in " +
+					"diagonals or zigzag patterns, then over the patch up and down to even out the paint."+ 
+					"\n5. Remove tape after the wall is completely dry.";
+			shareIntent.putExtra(Intent.EXTRA_TEXT, accentWallShare);
+			
+			return shareIntent;
 		}
 }

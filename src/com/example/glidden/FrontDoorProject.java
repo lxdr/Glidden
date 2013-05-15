@@ -9,8 +9,12 @@ import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ShareActionProvider;
 
 public class FrontDoorProject extends FragmentActivity {
+	
+	private ShareActionProvider myShareActionProvider;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -58,6 +62,36 @@ public class FrontDoorProject extends FragmentActivity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.action_menu, menu);
+		
+		MenuItem item = menu.findItem(R.id.menu_item_share);
+		myShareActionProvider = (ShareActionProvider)item.getActionProvider();
+		myShareActionProvider.setShareHistoryFileName(
+				ShareActionProvider.DEFAULT_SHARE_HISTORY_FILE_NAME);
+		myShareActionProvider.setShareIntent(createShareIntent());
+		
 		return true;
 	}
+	
+	private Intent createShareIntent() {
+
+		Intent shareIntent = new Intent(Intent.ACTION_SEND);
+		shareIntent.setType("text/plain");
+		String frontDoorShare = "There's nothing like a good first impression. " +
+				"Paint your door a bright color to bring a pop to any home. " +
+				"Take an afternoon and give the front of your house a facelift."+
+				"\n"+
+				"\nRubber cement"+
+				"\n2-2.5Ó brush"+
+				"\n4Ó brush or foam roller"+
+				"\nGlidden Red Delicious Paint GLR30 (amounts vary by door size)"+
+				"\n"+
+				"\n1. Give the surface a quick wash and rise. Be sure to let it dry completely."+
+				"\n2. Use a few coats of rubber cement to cover the metal hinges. Mask the doorknob, lock and any other hardware."+
+				"\n3. Here is the exciting part. Using a 2-2.5Ó brush begin by painting the frame, work up from the inside bottom, " +
+				"across the top and down the other side."+ "\n4. Use a 4Ó brush or foam roller to paint the door.";
+		shareIntent.putExtra(Intent.EXTRA_TEXT, frontDoorShare);
+
+		return shareIntent;
+	}
+	
 }

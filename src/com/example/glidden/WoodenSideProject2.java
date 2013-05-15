@@ -1,16 +1,20 @@
 package com.example.glidden;
 
-import android.os.Bundle;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ShareActionProvider;
 
 public class WoodenSideProject2 extends Activity {
+	
+	private ShareActionProvider myShareActionProvider;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -61,6 +65,37 @@ public class WoodenSideProject2 extends Activity {
 		MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.action_menu, menu);
 		
+		MenuItem item = menu.findItem(R.id.menu_item_share);
+		myShareActionProvider = (ShareActionProvider)item.getActionProvider();
+		myShareActionProvider.setShareHistoryFileName(
+				ShareActionProvider.DEFAULT_SHARE_HISTORY_FILE_NAME);
+		myShareActionProvider.setShareIntent(createShareIntent());
+		
 		return true;
+	}
+	
+	private Intent createShareIntent() {
+
+		Intent shareIntent = new Intent(Intent.ACTION_SEND);
+		shareIntent.setType("text/plain");
+		String sideTableShare = "Spruce up an old side table with this quick and easy how-to. " +
+				"Take a weekend to bring a new centerpiece to your room. " +
+				"Perfect for first time painters these steps include tips and tricks to help you freshen up your space.  "+
+				"\n"+
+				"\nSander or paint stripper"+
+				"\nDropcloth"+
+				"\nRags"+ 
+				"\nPainters tape"+ 
+				"\n2-2.5” brush"+
+				"\nGlidden ____ paint (amounts vary by size)"+
+				"\n"+
+				"\n1. Follow the directions on the paint stripper, or use a sander " +
+				"to strip old paint and finishes off of the table. If using the sander, wipe the table down with a damp rag after."+
+				"\n2. Cover any hinges and handles you don’t wish to paint with painter’s tape."+ "\n3. Paint an even layer over the table " +
+				"using the brush. Add additional coats to reach desired color, allowing time to dry between each coat. " + "\n4. Remove tape " +
+				"after the final coat is dry.";
+		shareIntent.putExtra(Intent.EXTRA_TEXT, sideTableShare);
+
+		return shareIntent;
 	}
 }
