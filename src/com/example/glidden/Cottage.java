@@ -63,8 +63,8 @@ public class Cottage extends Activity {
     	results.add(item_details);
     	
     	item_details = new ItemDetails();
-    	item_details.setName("BeadedBoardPaneling");
-    	item_details.setNameTitle("Beaded Board Paneling");
+    	item_details.setName("BedboardPaneling");
+    	item_details.setNameTitle("Bedboard Paneling");
     	item_details.setProjectDescription("Painting these panels can be tricky, but our instructions help you get the most...");
     	item_details.setImageNumber(9);
     	results.add(item_details);

@@ -24,7 +24,7 @@ public class CorkBoardProject2 extends Activity {
 		ActionBar actionBar = getActionBar();
 	    actionBar.setDisplayHomeAsUpEnabled(true);
 	    actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-	    setTitle("Creative Coarkboard");
+	    setTitle("Corkboard Frame");
     	
 	    ActionBar.Tab tab1 = actionBar.newTab().setText("Description");
 	    ActionBar.Tab tab2 = actionBar.newTab().setText("Shopping List");

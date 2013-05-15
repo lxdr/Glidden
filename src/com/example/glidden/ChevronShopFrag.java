@@ -11,7 +11,7 @@ import android.widget.ListView;
 public class ChevronShopFrag extends Fragment 
 {
 	private String[] shopping_items = {"Painters tape", "Pencil", "Tape measure", 
-			"Crafts knife", "Glidden ______ (amounts vary by wall size)"  };
+			"Crafts knife", "Glidden¨ High EnduranceTM in Dove White and French Grey"  };
 	
 	private ListView lView1;
 	

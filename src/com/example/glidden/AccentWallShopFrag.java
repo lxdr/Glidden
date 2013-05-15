@@ -11,8 +11,7 @@ import android.widget.ListView;
 public class AccentWallShopFrag extends Fragment 
 {
 	private String[] shopping_items = {"Drop cloth", "2-3” brush", "Roller with extension handle", "Paint tray", "Painter’s tape",
-										"GliddenTM paint — Color: We used Pink Salmon! Type: Glidden® High EnduranceTM Plus, Glidden® " +
-										"High EnduranceTM, or Glidden® High EnduranceTMGrab-N-Go"};
+										"Glidden® High EnduranceTM Plus in Pink Salmon"};
 	
 	private ListView lView1;
 	

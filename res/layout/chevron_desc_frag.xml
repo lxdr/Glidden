@@ -21,8 +21,9 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="26dp"
         android:gravity="left"
         android:text="A new trend in design found on furniture, clothes and purses can now be found on your walls. Take a weekend to give your room this modern twist. This pattern looks complicated but is made easy with these directions."
         android:textAppearance="?android:attr/textAppearanceMedium" />
